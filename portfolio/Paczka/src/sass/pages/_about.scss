@@ -1,0 +1,15 @@
+@import "../helpers/placeholders";
+
+%about {
+  #about {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: $text;
+    h2 {
+      color: $background;
+      text-align: center;
+    }
+  }
+}

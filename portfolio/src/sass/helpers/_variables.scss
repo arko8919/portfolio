@@ -1,5 +1,29 @@
-$background : #101419;
-$subtext : #468C98;
+/* Colors */
+/*
+$background : #252627;
+$background-nav : #101419;
+$hover : #08FDD8;
 $nav : #476C9B;
-$text : #ADD9F4;
+$elements : #ADD9F4;
 $text-styling : #984447;
+$text : #fff;
+$text-grey: rgba(255, 255, 255, 0.3);
+*/
+
+$background: #fff; /* odd */
+$background-even: #F5F5F5; /* even */
+$background-nav: #1B242F;
+$hover : #E31B6D;
+$hover-text: #fff;
+$hover-nav: #08FDD8;
+$nav : #476C9B;
+$elements : #ADD9F4;
+$text-styling : #984447;
+$text : #444649;
+$text-grey: #616161;
+
+
+/* MENU */
+/* icon-overlay */
+$menuItems: "HOME", "ABOUT", "SKILLS", "MY WORK", "CONTACT";
+$counter: 1;
