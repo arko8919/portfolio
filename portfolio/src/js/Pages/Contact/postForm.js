@@ -1,6 +1,7 @@
 import React from "react";
 import $ from "jquery";
 
+/* Not Working */
 export class PostForm extends React.Component {
     constructor(props) {
         super(props);
