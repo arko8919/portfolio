@@ -1,0 +1,65 @@
+@import "../helpers/mixins";
+
+%paragraphs-falling-letters {
+  p:nth-child(1) {
+    position: relative;
+    min-width: 80px;
+    display: block;
+    margin: 0 0 0 20px;
+    min-height: 60px;
+    @include addFirstParagraph(4, 0px, 25);
+    @media only screen and (min-width: 400px) {
+      min-height: 100px;
+      min-width: 120px;
+      margin: 0;
+      display: inline-block;
+      @include addFirstParagraph(4, 0px, 40);
+    }
+    @media only screen and (min-width: 800px) {
+      min-width: 200px;
+      min-height: 140px;
+      display: inline-block;
+      @include addFirstParagraph(4, 0px, 60);
+    }
+  }
+
+  p:nth-child(2) {
+    position: relative;
+    display: inline-block;
+    min-width: 70px;
+    margin: 0 0 0 20px;
+    min-height: 60px;
+    @include addSecondParagraph(4, 0px, 15);
+    @media only screen and (min-width: 400px) {
+      min-height: 100px;
+      min-width: 120px;
+      margin: 0;
+      @include addSecondParagraph(4, 0px, 30);
+    }
+    @media only screen and (min-width: 800px) {
+      margin: 0;
+      min-height: 140px;
+      min-width: 200px;
+      @include addSecondParagraph(4, 0px, 45);
+    }
+  }
+
+  p:nth-child(3) {
+    position: relative;
+    display: inline-block;
+    min-width: 130px;
+    margin: 0;
+    min-height: 60px;
+    @include addThirdParagraph(6, 0px, 25);
+    @media only screen and (min-width: 400px) {
+      min-height: 100px;
+      min-width: 200px;
+      @include addThirdParagraph(6, 0px, 35);
+    }
+    @media only screen and (min-width: 800px) {
+      min-height: 140px;
+      min-width: 300px;
+      @include addThirdParagraph(6, 0px, 60);
+    }
+  }
+}

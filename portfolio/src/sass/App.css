@@ -1,25 +1,18 @@
 /* Colors */
-/*
-$background : #252627;
-$background-nav : #101419;
-$hover : #08FDD8;
-$nav : #476C9B;
-$elements : #ADD9F4;
-$text-styling : #984447;
-$text : #fff;
-$text-grey: rgba(255, 255, 255, 0.3);
-*/
 /* odd */
 /* even */
+/* Fonts */
+/* Fonts-size */
 /* MENU */
 /* icon-overlay */
-.container .nav-container nav a:nth-child(1) i:after, .container .nav-container nav a:nth-child(2) i:after, .container .nav-container nav a:nth-child(3) i:after, .container .nav-container nav a:nth-child(4) i:after, .container .nav-container nav a:nth-child(5) i:after {
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
 
-.container .nav-container nav a:nth-child(1) i:before {
+/* Menu Links */
+body .container .nav-container nav a:nth-child(1) i:before {
   content: "";
   position: absolute;
   top: 0;
@@ -29,17 +22,18 @@ $text-grey: rgba(255, 255, 255, 0.3);
   background-color: #1B242F;
   opacity: 0;
   transition: opacity 0.5s; }
-.container .nav-container nav a:nth-child(1) i:hover:before {
+body .container .nav-container nav a:nth-child(1) i:hover:before {
   opacity: 1; }
-.container .nav-container nav a:nth-child(1) i:after {
+body .container .nav-container nav a:nth-child(1) i:after {
   content: "HOME";
   opacity: 0;
   transition: opacity 0.5s;
   font-size: 8px;
   /* Centered */ }
-.container .nav-container nav a:nth-child(1) i:hover:after {
-  opacity: 1; }
-.container .nav-container nav a:nth-child(2) i:before {
+body .container .nav-container nav a:nth-child(1) i:hover:after {
+  opacity: 1;
+  color: #08FDD8; }
+body .container .nav-container nav a:nth-child(2) i:before {
   content: "";
   position: absolute;
   top: 0;
@@ -49,17 +43,18 @@ $text-grey: rgba(255, 255, 255, 0.3);
   background-color: #1B242F;
   opacity: 0;
   transition: opacity 0.5s; }
-.container .nav-container nav a:nth-child(2) i:hover:before {
+body .container .nav-container nav a:nth-child(2) i:hover:before {
   opacity: 1; }
-.container .nav-container nav a:nth-child(2) i:after {
+body .container .nav-container nav a:nth-child(2) i:after {
   content: "ABOUT";
   opacity: 0;
   transition: opacity 0.5s;
   font-size: 8px;
   /* Centered */ }
-.container .nav-container nav a:nth-child(2) i:hover:after {
-  opacity: 1; }
-.container .nav-container nav a:nth-child(3) i:before {
+body .container .nav-container nav a:nth-child(2) i:hover:after {
+  opacity: 1;
+  color: #08FDD8; }
+body .container .nav-container nav a:nth-child(3) i:before {
   content: "";
   position: absolute;
   top: 0;
@@ -69,17 +64,18 @@ $text-grey: rgba(255, 255, 255, 0.3);
   background-color: #1B242F;
   opacity: 0;
   transition: opacity 0.5s; }
-.container .nav-container nav a:nth-child(3) i:hover:before {
+body .container .nav-container nav a:nth-child(3) i:hover:before {
   opacity: 1; }
-.container .nav-container nav a:nth-child(3) i:after {
+body .container .nav-container nav a:nth-child(3) i:after {
   content: "SKILLS";
   opacity: 0;
   transition: opacity 0.5s;
   font-size: 8px;
   /* Centered */ }
-.container .nav-container nav a:nth-child(3) i:hover:after {
-  opacity: 1; }
-.container .nav-container nav a:nth-child(4) i:before {
+body .container .nav-container nav a:nth-child(3) i:hover:after {
+  opacity: 1;
+  color: #08FDD8; }
+body .container .nav-container nav a:nth-child(4) i:before {
   content: "";
   position: absolute;
   top: 0;
@@ -89,17 +85,18 @@ $text-grey: rgba(255, 255, 255, 0.3);
   background-color: #1B242F;
   opacity: 0;
   transition: opacity 0.5s; }
-.container .nav-container nav a:nth-child(4) i:hover:before {
+body .container .nav-container nav a:nth-child(4) i:hover:before {
   opacity: 1; }
-.container .nav-container nav a:nth-child(4) i:after {
+body .container .nav-container nav a:nth-child(4) i:after {
   content: "MY WORK";
   opacity: 0;
   transition: opacity 0.5s;
   font-size: 8px;
   /* Centered */ }
-.container .nav-container nav a:nth-child(4) i:hover:after {
-  opacity: 1; }
-.container .nav-container nav a:nth-child(5) i:before {
+body .container .nav-container nav a:nth-child(4) i:hover:after {
+  opacity: 1;
+  color: #08FDD8; }
+body .container .nav-container nav a:nth-child(5) i:before {
   content: "";
   position: absolute;
   top: 0;
@@ -109,40 +106,44 @@ $text-grey: rgba(255, 255, 255, 0.3);
   background-color: #1B242F;
   opacity: 0;
   transition: opacity 0.5s; }
-.container .nav-container nav a:nth-child(5) i:hover:before {
+body .container .nav-container nav a:nth-child(5) i:hover:before {
   opacity: 1; }
-.container .nav-container nav a:nth-child(5) i:after {
+body .container .nav-container nav a:nth-child(5) i:after {
   content: "CONTACT";
   opacity: 0;
   transition: opacity 0.5s;
   font-size: 8px;
   /* Centered */ }
-.container .nav-container nav a:nth-child(5) i:hover:after {
-  opacity: 1; }
+body .container .nav-container nav a:nth-child(5) i:hover:after {
+  opacity: 1;
+  color: #08FDD8; }
 
-.container .nav-container {
+body .container .nav-container {
   /* TOP MENU - on small screen */
   /* BOTTOM MENU */
-  /* Tablets */
-  /* Desktop */ }
-  .container .nav-container .menu {
+  /* Add class to nav which hide and show menu */ }
+  body .container .nav-container .menu {
     width: 100%;
     height: 40px;
     display: flex;
     flex-flow: row-reverse nowrap;
+    align-items: center;
     padding: 3px 10px 0 10px;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #1B242F;
     z-index: 1000; }
-    .container .nav-container .menu .material-icons.md {
+    @media only screen and (min-width: 400px) {
+      body .container .nav-container .menu {
+        display: none; } }
+    body .container .nav-container .menu .material-icons.md {
       font-size: 36px;
-      color: #fff; }
-      .container .nav-container .menu .material-icons.md:hover {
-        color: #08FDD8;
-        cursor: pointer; }
-  .container .nav-container nav {
+      color: #fff;
+      cursor: pointer; }
+      body .container .nav-container .menu .material-icons.md:hover {
+        color: #08FDD8; }
+  body .container .nav-container nav {
     width: 100%;
     position: fixed;
     top: 40px;
@@ -153,60 +154,548 @@ $text-grey: rgba(255, 255, 255, 0.3);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
+    align-items: center;
     background-color: #1B242F;
+    /* Medium screen */
+    /* Large screen */
     /* Menu icons Overlay on all screens */ }
-    .container .nav-container nav a {
+    @media only screen and (min-width: 400px) {
+      body .container .nav-container nav {
+        transform: translate3d(0, 0, 0);
+        top: 0;
+        justify-content: center; } }
+    @media only screen and (min-width: 800px) {
+      body .container .nav-container nav {
+        flex-flow: column wrap;
+        width: 80px;
+        height: 100%; } }
+    body .container .nav-container nav a {
       position: relative;
       padding: 10px 0;
       text-decoration: none;
       display: flex;
-      justify-content: center; }
-      .container .nav-container nav a .material-icons.md {
+      justify-content: center;
+      align-items: center; }
+      body .container .nav-container nav a .material-icons.md {
         color: #616161; }
-        .container .nav-container nav a .material-icons.md:hover {
-          color: #08FDD8; }
-  .container .nav-container nav.hide {
+        body .container .nav-container nav a .material-icons.md:hover {
+          color: #E74C3C; }
+      @media only screen and (min-width: 400px) {
+        body .container .nav-container nav a {
+          padding: 10px 20px; } }
+  body .container .nav-container .hide {
     transform: translate3d(-100%, 0, 0); }
-  .container .nav-container nav.show {
+    @media only screen and (min-width: 400px) {
+      body .container .nav-container .hide {
+        transform: translate3d(0, 0, 0); } }
+  body .container .nav-container .show {
     transform: translate3d(0, 0, 0);
     overflow: hidden; }
-  @media only screen and (min-width: 400px) {
-    .container .nav-container .menu {
-      display: none; }
-    .container .nav-container nav {
-      transform: translate3d(0, 0, 0);
-      top: 0;
-      justify-content: center; }
-      .container .nav-container nav a {
-        padding: 10px 20px; }
-    .container .nav-container nav.hide {
-      transform: translate3d(0, 0, 0); } }
-  @media only screen and (min-width: 800px) {
-    .container .nav-container nav {
-      flex-flow: column wrap;
-      width: 80px;
-      height: 100%; } }
 
 /* Colors */
-/*
-$background : #252627;
-$background-nav : #101419;
-$hover : #08FDD8;
-$nav : #476C9B;
-$elements : #ADD9F4;
-$text-styling : #984447;
-$text : #fff;
-$text-grey: rgba(255, 255, 255, 0.3);
-*/
 /* odd */
 /* even */
+/* Fonts */
+/* Fonts-size */
 /* MENU */
 /* icon-overlay */
-.container .nav-container nav a:nth-child(1) i:after, .container .nav-container nav a:nth-child(2) i:after, .container .nav-container nav a:nth-child(3) i:after, .container .nav-container nav a:nth-child(4) i:after, .container .nav-container nav a:nth-child(5) i:after {
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
+
+/* Colors */
+/* odd */
+/* even */
+/* Fonts */
+/* Fonts-size */
+/* MENU */
+/* icon-overlay */
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+/* Falling letters */
+/* Falling letters ENDS HERE */
+body .container #home .heading p:nth-child(1) {
+  position: relative;
+  min-width: 80px;
+  display: block;
+  margin: 0 0 0 20px;
+  min-height: 60px;
+  /* Random animation duration */
+  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+  /* Random animation duration */
+  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+  /* Random animation duration */
+  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
+  body .container #home .heading p:nth-child(1) span:nth-child(1) {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0px;
+    color: #252627;
+    text-shadow: 2px 2px 10px #fff;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+  body .container #home .heading p:nth-child(1) span:nth-child(2) {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 25px;
+    color: #252627;
+    text-shadow: 2px 2px 10px #fff;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 3.5s;
+    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+  body .container #home .heading p:nth-child(1) span:nth-child(3) {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 50px;
+    color: #252627;
+    text-shadow: 2px 2px 10px #fff;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 3.5s;
+    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p:nth-child(1) {
+      min-height: 100px;
+      min-width: 120px;
+      margin: 0;
+      display: inline-block;
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
+      body .container #home .heading p:nth-child(1) span:nth-child(1) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 0px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(1) span:nth-child(2) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 40px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(1) span:nth-child(3) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 80px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 3.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p:nth-child(1) {
+      min-width: 200px;
+      min-height: 140px;
+      display: inline-block;
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
+      body .container #home .heading p:nth-child(1) span:nth-child(1) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 0px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 3.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(1) span:nth-child(2) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 60px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(1) span:nth-child(3) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 120px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 3.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); } }
+body .container #home .heading p:nth-child(2) {
+  position: relative;
+  display: inline-block;
+  min-width: 70px;
+  margin: 0 0 0 20px;
+  min-height: 60px;
+  /* Random animation duration */
+  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+  /* Random animation duration */
+  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+  /* Random animation duration */
+  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
+  body .container #home .heading p:nth-child(2) span:nth-child(1) {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0px;
+    color: #252627;
+    text-shadow: 2px 2px 10px #fff;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 2.5s;
+    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+  body .container #home .heading p:nth-child(2) span:nth-child(2) {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 15px;
+    color: #252627;
+    text-shadow: 2px 2px 10px #fff;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+  body .container #home .heading p:nth-child(2) span:nth-child(3) {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 30px;
+    color: #252627;
+    text-shadow: 2px 2px 10px #fff;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p:nth-child(2) {
+      min-height: 100px;
+      min-width: 120px;
+      margin: 0;
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
+      body .container #home .heading p:nth-child(2) span:nth-child(1) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 0px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(2) span:nth-child(2) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 30px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(2) span:nth-child(3) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 60px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p:nth-child(2) {
+      margin: 0;
+      min-height: 140px;
+      min-width: 200px;
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
+      body .container #home .heading p:nth-child(2) span:nth-child(1) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 0px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(2) span:nth-child(2) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 45px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 3.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(2) span:nth-child(3) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 90px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); } }
+body .container #home .heading p:nth-child(3) {
+  position: relative;
+  display: inline-block;
+  min-width: 130px;
+  margin: 0;
+  min-height: 60px;
+  /* Random animation duration */
+  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+  /* Random animation duration */
+  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+  /* Random animation duration */
+  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+  /* Random animation duration */
+  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+  /* Random animation duration */
+  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
+  body .container #home .heading p:nth-child(3) span:nth-child(1) {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0px;
+    color: #252627;
+    text-shadow: 2px 2px 10px #fff;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 3.5s;
+    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+  body .container #home .heading p:nth-child(3) span:nth-child(2) {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 25px;
+    color: #252627;
+    text-shadow: 2px 2px 10px #fff;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+  body .container #home .heading p:nth-child(3) span:nth-child(3) {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 50px;
+    color: #252627;
+    text-shadow: 2px 2px 10px #fff;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 3.5s;
+    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+  body .container #home .heading p:nth-child(3) span:nth-child(4) {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 75px;
+    color: #252627;
+    text-shadow: 2px 2px 10px #fff;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 3.5s;
+    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+  body .container #home .heading p:nth-child(3) span:nth-child(5) {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 100px;
+    color: #252627;
+    text-shadow: 2px 2px 10px #fff;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 3.5s;
+    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p:nth-child(3) {
+      min-height: 100px;
+      min-width: 200px;
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
+      body .container #home .heading p:nth-child(3) span:nth-child(1) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 0px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(3) span:nth-child(2) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 35px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 3.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(3) span:nth-child(3) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 70px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 3.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(3) span:nth-child(4) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 105px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(3) span:nth-child(5) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 140px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p:nth-child(3) {
+      min-height: 140px;
+      min-width: 300px;
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
+      /* Random animation duration */
+      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
+      body .container #home .heading p:nth-child(3) span:nth-child(1) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 0px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(3) span:nth-child(2) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 60px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 3.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(3) span:nth-child(3) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 120px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 2.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(3) span:nth-child(4) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 180px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
+      body .container #home .heading p:nth-child(3) span:nth-child(5) {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        left: 240px;
+        color: #252627;
+        text-shadow: 2px 2px 10px #fff;
+        animation-name: move;
+        animation-delay: 0s;
+        animation-duration: 3.5s;
+        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); } }
 
 @keyframes move {
   0% {
@@ -215,370 +704,342 @@ $text-grey: rgba(255, 255, 255, 0.3);
   100% {
     top: 0;
     opacity: 1; } }
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0); }
-  40% {
-    -webkit-transform: translateY(-30px); }
-  60% {
-    -webkit-transform: translateY(-15px); } }
-@-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0); }
-  40% {
-    -moz-transform: translateY(-30px); }
-  60% {
-    -moz-transform: translateY(-15px); } }
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0); }
-  40% {
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -o-transform: translateY(-30px);
-    transform: translateY(-30px); }
-  60% {
-    -webkit-transform: translateY(-15px);
-    -moz-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    -o-transform: translateY(-15px);
-    transform: translateY(-15px); } }
-.container #home {
-  padding: 80px 0 40px 0;
+body .container #home {
+  padding: 100px 0 40px 0;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
+  align-items: flex-start;
+  min-height: 100vh;
   font-size: 14px;
-  height: 100vh; }
-  .container #home #heading {
-    position: relative;
-    min-width: 500px;
-    min-height: 100px;
-    font-size: 2em;
-    margin: 0; }
-    .container #home #heading p:nth-child(1) {
-      position: absolute;
-      opacity: 1;
-      top: 0;
-      left: 0;
-      display: inline-block;
-      line-height: 1.5em;
-      margin: 0 10px 0 0;
-      color: #444649;
-      text-shadow: 1px 1px 10px red;
-      animation-name: move, bounce;
-      animation-delay: 0s, 2s;
-      animation-duration: 3s, 2s;
-      animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      .container #home #heading p:nth-child(1)::first-letter {
-        font-size: 2em;
-        color: red;
-        text-shadow: 1px 1px 2px #444649; }
-      .container #home #heading p:nth-child(1) span {
-        color: #444649;
-        text-shadow: 0 0; }
-    .container #home #heading p:nth-child(2) {
-      position: absolute;
-      opacity: 1;
-      top: 0;
-      left: 150px;
-      display: inline-block;
-      line-height: 1.5em;
-      margin: 0 10px 0 0;
-      color: #444649;
-      text-shadow: 1px 1px 10px red;
-      animation-name: move, bounce;
-      animation-delay: 0s, 2s;
-      animation-duration: 3s, 2s;
-      animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      .container #home #heading p:nth-child(2)::first-letter {
-        font-size: 2em;
-        color: red;
-        text-shadow: 1px 1px 2px #444649; }
-      .container #home #heading p:nth-child(2) span {
-        color: #444649;
-        text-shadow: 0 0; }
-    .container #home #heading p:nth-child(3) {
-      position: absolute;
-      opacity: 1;
-      top: 0;
-      left: 300px;
-      display: inline-block;
-      line-height: 1.5em;
-      margin: 0 10px 0 0;
-      color: #444649;
-      text-shadow: 1px 1px 10px red;
-      animation-name: move, bounce;
-      animation-delay: 0s, 2s;
-      animation-duration: 3s, 2s;
-      animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      .container #home #heading p:nth-child(3)::first-letter {
-        font-size: 2em;
-        color: red;
-        text-shadow: 1px 1px 2px #444649; }
-      .container #home #heading p:nth-child(3) span {
-        color: #444649;
-        text-shadow: 0 0; }
-    .container #home #heading p:first-child {
-      display: block; }
-  .container #home p {
+  background-color: #E74C3C; }
+  @media only screen and (min-width: 400px) {
+    body .container #home {
+      padding: 80px 0 40px 0;
+      align-items: center;
+      justify-content: center; } }
+  body .container #home .heading {
+    font-size: 3em;
+    width: 100%;
+    margin: 0;
+    font-family: "Roboto Mono", monospace; }
+    @media only screen and (min-width: 400px) {
+      body .container #home .heading {
+        text-align: center;
+        font-size: 5em; } }
+    @media only screen and (min-width: 800px) {
+      body .container #home .heading {
+        font-size: 8em; } }
+  body .container #home .subHeading {
     margin-top: 0;
-    font-size: 0.8em;
-    color: #616161; }
-  .container #home a {
-    margin-top: 20px;
+    margin-left: 20px;
+    padding: 2px;
+    font-size: 1.5em;
+    color: #616161;
+    text-shadow: 1px 1px 4px #fff; }
+    @media only screen and (min-width: 400px) {
+      body .container #home .subHeading {
+        font-size: 2em; } }
+    @media only screen and (min-width: 800px) {
+      body .container #home .subHeading {
+        font-size: 4em; } }
+  body .container #home a {
+    font-family: "Roboto Mono", monospace;
+    font-size: 1em;
+    margin-left: 20px;
     text-decoration: none;
-    border: 1px solid #444649;
-    border-radius: 5px;
+    border: 1px solid #fff;
     padding: 5px;
-    color: #E31B6D;
-    font-weight: bold; }
-    .container #home a:hover {
-      color: #fff;
-      background-color: #E31B6D; }
-@media only screen and (min-width: 400px) {
-  .container #home #heading p:first-child {
-    display: inline-block; }
-  .container #home p {
-    font-size: 2em; } }
+    background-color: #E74C3C;
+    box-shadow: 0 0 15px #252627;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.5s, background-color 1.5s, text-shadow 0.5s; }
+    @media only screen and (min-width: 400px) {
+      body .container #home a {
+        padding: 10px; } }
+    body .container #home a i {
+      padding-left: 5px;
+      transition: all 0.5s; }
+    body .container #home a:hover {
+      color: black;
+      background-color: #fff;
+      text-shadow: 0 0 2px red; }
+    body .container #home a:hover i {
+      transform: rotate(90deg) translate(-2px, 0); }
 
 /* Colors */
-/*
-$background : #252627;
-$background-nav : #101419;
-$hover : #08FDD8;
-$nav : #476C9B;
-$elements : #ADD9F4;
-$text-styling : #984447;
-$text : #fff;
-$text-grey: rgba(255, 255, 255, 0.3);
-*/
 /* odd */
 /* even */
+/* Fonts */
+/* Fonts-size */
 /* MENU */
 /* icon-overlay */
-.container .nav-container nav a:nth-child(1) i:after, .container .nav-container nav a:nth-child(2) i:after, .container .nav-container nav a:nth-child(3) i:after, .container .nav-container nav a:nth-child(4) i:after, .container .nav-container nav a:nth-child(5) i:after {
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
 
-.container #about {
+body .container #about {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   padding: 40px 20px;
+  font-size: 14px;
   background-color: #F5F5F5; }
-  .container #about h2 {
-    color: #444649; }
+  body .container #about h2 {
+    color: #444649;
+    font-size: 2em; }
+    @media only screen and (min-width: 400px) {
+      body .container #about h2 {
+        font-size: 3em; } }
+    @media only screen and (min-width: 800px) {
+      body .container #about h2 {
+        font-size: 3.5em; } }
+  body .container #about p {
+    font-size: 1.2em; }
+    body .container #about p span {
+      color: #E74C3C;
+      font-weight: bold; }
+    @media only screen and (min-width: 400px) {
+      body .container #about p {
+        font-size: 1.5em; } }
+    @media only screen and (min-width: 800px) {
+      body .container #about p {
+        font-size: 2em; } }
 
 /* Colors */
-/*
-$background : #252627;
-$background-nav : #101419;
-$hover : #08FDD8;
-$nav : #476C9B;
-$elements : #ADD9F4;
-$text-styling : #984447;
-$text : #fff;
-$text-grey: rgba(255, 255, 255, 0.3);
-*/
 /* odd */
 /* even */
+/* Fonts */
+/* Fonts-size */
 /* MENU */
 /* icon-overlay */
-.container .nav-container nav a:nth-child(1) i:after, .container .nav-container nav a:nth-child(2) i:after, .container .nav-container nav a:nth-child(3) i:after, .container .nav-container nav a:nth-child(4) i:after, .container .nav-container nav a:nth-child(5) i:after {
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
 
-.container #skills {
+body .container #skills {
   padding: 40px 0 60px 0;
-  background: #fff; }
-  .container #skills h2 {
+  background: #fff;
+  font-size: 14px; }
+  body .container #skills h2 {
+    font-size: 2em;
     text-align: center;
     color: #444649;
     margin-bottom: 60px; }
-  .container #skills .container {
+    @media only screen and (min-width: 400px) {
+      body .container #skills h2 {
+        font-size: 3em; } }
+    @media only screen and (min-width: 400px) {
+      body .container #skills h2 {
+        font-size: 3.5em; } }
+  body .container #skills .container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center; }
-    .container #skills .container .content {
+    body .container #skills .container .content {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
-      margin: 15px; }
-      .container #skills .container .content i {
+      margin: 15px;
+      align-self: center; }
+      body .container #skills .container .content i {
         font-size: 36px;
         margin-bottom: 10px; }
-      .container #skills .container .content span {
-        color: #444649;
+        @media only screen and (min-width: 400px) {
+          body .container #skills .container .content i {
+            font-size: 64px;
+            margin-left: 10px;
+            margin-right: 10px; } }
+        @media only screen and (min-width: 800px) {
+          body .container #skills .container .content i {
+            font-size: 96px;
+            margin-left: 20px;
+            margin-right: 20px; } }
+      body .container #skills .container .content span {
+        color: #616161;
         font-weight: bold; }
-  @media only screen and (min-width: 500px) {
-    .container #skills .container .content i {
-      font-size: 48px; } }
-  @media only screen and (min-width: 800px) {
-    .container #skills .container .content i {
-      font-size: 64px; } }
 
 /* Colors */
-/*
-$background : #252627;
-$background-nav : #101419;
-$hover : #08FDD8;
-$nav : #476C9B;
-$elements : #ADD9F4;
-$text-styling : #984447;
-$text : #fff;
-$text-grey: rgba(255, 255, 255, 0.3);
-*/
 /* odd */
 /* even */
+/* Fonts */
+/* Fonts-size */
 /* MENU */
 /* icon-overlay */
-.container .nav-container nav a:nth-child(1) i:after, .container .nav-container nav a:nth-child(2) i:after, .container .nav-container nav a:nth-child(3) i:after, .container .nav-container nav a:nth-child(4) i:after, .container .nav-container nav a:nth-child(5) i:after {
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
 
-.container #myWork {
+/* Colors */
+/* odd */
+/* even */
+/* Fonts */
+/* Fonts-size */
+/* MENU */
+/* icon-overlay */
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+body .container #myWork .container .content .overlayTop {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background-color: #F5F5F5;
+  opacity: 0;
+  transition: all 1s; }
+  body .container #myWork .container .content .overlayTop h3 {
+    margin: 0; }
+  body .container #myWork .container .content .overlayTop span {
+    color: #984447; }
+body .container #myWork .container .content .overlayBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #F5F5F5;
+  opacity: 0;
+  transition: all 1s; }
+  body .container #myWork .container .content .overlayBottom a {
+    text-decoration: none;
+    border: 1px solid #E31B6D;
+    padding: 5px 15px;
+    color: #444649;
+    font-weight: bold; }
+    body .container #myWork .container .content .overlayBottom a:hover {
+      background-color: #E31B6D;
+      color: #fff; }
+
+body .container #myWork {
   padding: 40px 0 60px 0;
-  background-color: #F5F5F5; }
-  .container #myWork h2 {
+  background-color: #F5F5F5;
+  font-size: 14px; }
+  body .container #myWork h2 {
     text-align: center;
-    margin-bottom: 60px; }
-  .container #myWork .container {
+    margin-bottom: 60px;
+    color: #444649;
+    font-size: 2em; }
+    @media only screen and (min-width: 400px) {
+      body .container #myWork h2 {
+        font-size: 3em; } }
+    @media only screen and (min-width: 800px) {
+      body .container #myWork h2 {
+        font-size: 3.5em; } }
+  body .container #myWork .container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     cursor: pointer; }
-    .container #myWork .container .content {
-      position: relative; }
-      .container #myWork .container .content:hover {
+    @media only screen and (min-width: 500px) {
+      body .container #myWork .container {
+        flex-flow: row wrap; } }
+    @media only screen and (min-width: 700px) {
+      body .container #myWork .container {
+        flex-flow: row nowrap; } }
+    body .container #myWork .container .content {
+      position: relative;
+      /* Overlay on image */ }
+      @media only screen and (min-width: 500px) {
+        body .container #myWork .container .content {
+          max-width: 230px;
+          height: auto;
+          margin: 5px; } }
+      @media only screen and (min-width: 700px) {
+        body .container #myWork .container .content {
+          max-width: none;
+          height: auto;
+          margin: 10px; } }
+      body .container #myWork .container .content:hover {
         box-shadow: 1px 1px 4px #000; }
-      .container #myWork .container .content:hover .overlayTop {
+      body .container #myWork .container .content:hover .overlayTop {
         opacity: 1;
         height: 50%;
         bottom: 50%; }
-      .container #myWork .container .content:hover .overlayBottom {
+      body .container #myWork .container .content:hover .overlayBottom {
         opacity: 1;
         height: 50%;
         top: 50%; }
-      .container #myWork .container .content img {
+      body .container #myWork .container .content img {
         display: block;
         max-width: 100%;
         height: auto; }
-      .container #myWork .container .content .overlayTop {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 0;
-        background-color: #F5F5F5;
-        opacity: 0;
-        transition: all 1s; }
-        .container #myWork .container .content .overlayTop h3 {
-          margin: 0; }
-        .container #myWork .container .content .overlayTop span {
-          color: #984447; }
-      .container #myWork .container .content .overlayBottom {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background-color: #F5F5F5;
-        opacity: 0;
-        transition: all 1s; }
-        .container #myWork .container .content .overlayBottom a {
-          text-decoration: none;
-          border: 1px solid #E31B6D;
-          padding: 5px 15px;
-          color: #444649;
-          font-weight: bold; }
-          .container #myWork .container .content .overlayBottom a:hover {
-            background-color: #E31B6D;
-            color: #fff; }
-  @media only screen and (min-width: 500px) {
-    .container #myWork h2 {
-      font-size: 2.5em; }
-    .container #myWork .container {
-      flex-flow: row wrap; }
-      .container #myWork .container .content {
-        max-width: 230px;
-        height: auto;
-        margin: 5px; } }
-  @media only screen and (min-width: 800px) {
-    .container #myWork h2 {
-      font-size: 3em; }
-    .container #myWork .container {
-      flex-flow: row nowrap; }
-      .container #myWork .container .content {
-        max-width: none;
-        height: auto;
-        margin: 10px; } }
 
 /* Colors */
-/*
-$background : #252627;
-$background-nav : #101419;
-$hover : #08FDD8;
-$nav : #476C9B;
-$elements : #ADD9F4;
-$text-styling : #984447;
-$text : #fff;
-$text-grey: rgba(255, 255, 255, 0.3);
-*/
 /* odd */
 /* even */
+/* Fonts */
+/* Fonts-size */
 /* MENU */
 /* icon-overlay */
-.container .nav-container nav a:nth-child(1) i:after, .container .nav-container nav a:nth-child(2) i:after, .container .nav-container nav a:nth-child(3) i:after, .container .nav-container nav a:nth-child(4) i:after, .container .nav-container nav a:nth-child(5) i:after {
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
 
-.container #contact {
+body .container #contact {
   padding: 40px 20px;
+  font-size: 14px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center; }
-  .container #contact h2 {
-    text-align: center;
+  align-items: center; }
+  body .container #contact h2 {
     color: #444649; }
-  .container #contact p {
-    color: #444649; }
-  .container #contact form {
+    @media only screen and (min-width: 400px) {
+      body .container #contact h2 {
+        font-size: 3em; } }
+    @media only screen and (min-width: 800px) {
+      body .container #contact h2 {
+        font-size: 3.5em; } }
+  body .container #contact p {
+    color: #444649;
+    font-size: 1em; }
+    @media only screen and (min-width: 400px) {
+      body .container #contact p {
+        font-size: 1.2em; } }
+    @media only screen and (min-width: 800px) {
+      body .container #contact p {
+        font-size: 1.5em; } }
+  body .container #contact form {
     display: flex;
-    flex-flow: column nowrap; }
-    .container #contact form input, .container #contact form textarea {
+    flex-flow: column nowrap;
+    width: 100%; }
+    body .container #contact form input, body .container #contact form textarea {
       margin-bottom: 5px;
-      width: 100%;
       resize: vertical;
       padding: 5px 5px; }
-    .container #contact form input:last-child {
+    body .container #contact form textarea {
+      height: 80px; }
+      @media only screen and (min-width: 400px) {
+        body .container #contact form textarea {
+          height: 100px; } }
+    body .container #contact form input:last-child {
       cursor: pointer;
       border: 1px solid #444649;
       font-weight: bold;
@@ -586,11 +1047,18 @@ $text-grey: rgba(255, 255, 255, 0.3);
       width: 60px;
       background-color: #fff;
       color: #E31B6D; }
-      .container #contact form input:last-child:hover {
+      body .container #contact form input:last-child:hover {
         background-color: #E31B6D;
         color: #fff; }
-    @media only screen and (min-width: 800px) {
-      .container #contact form input, .container #contact form textarea {
-        width: 50%; } }
+    @media only screen and (min-width: 400px) {
+      body .container #contact form {
+        width: 80%; } }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* Imported Google Font */ }
+  @media only screen and (min-width: 800px) {
+    body {
+      margin-left: 80px; } }
 
 /*# sourceMappingURL=App.css.map */

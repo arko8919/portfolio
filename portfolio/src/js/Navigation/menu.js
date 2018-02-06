@@ -14,7 +14,6 @@ export class Menu extends React.Component {
 
         this.state = {active: "HOME"};
 
-
     }
 
     handleClick(menuItem) {
@@ -23,7 +22,8 @@ export class Menu extends React.Component {
     }
 
     render() {
-        const activeStyle = { color: '#08FDD8' };
+        // Color of active menu item
+        const activeStyle = { color: '#E74C3C' };
         return (
             <nav className={this.props.menuVisibility}>
                 {menuItems.map(menuItem =>
@@ -37,7 +37,6 @@ export class Menu extends React.Component {
                         </Link>
                 )}
             </nav>
-
         );
     }
 }

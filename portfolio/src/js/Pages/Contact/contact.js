@@ -9,7 +9,7 @@ export class Contact extends React.Component {
                 <h2>Contact</h2>
                 <p>Have a question or want hire me?</p>
                 <div id="form-messages"> </div>
-                <PostForm/>
+                <PostForm />
             </div>
         )
     }

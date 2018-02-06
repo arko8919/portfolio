@@ -3,25 +3,52 @@
 %contact {
   #contact {
     padding: 40px 20px;
+    font-size: $standard-size;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    align-items: center;
     h2 {
-      text-align: center;
       color: $text;
+      @media only screen and (min-width: 400px) {
+        font-size: 3em;
+      }
+      @media only screen and (min-width: 800px) {
+        font-size: 3.5em;
+      }
+
     }
     p {
       color: $text;
+      font-size: 1em;
+      @media only screen and (min-width: 400px) {
+        font-size: 1.2em;
+      }
+      @media only screen and (min-width: 800px) {
+        font-size: 1.5em;
+      }
     }
 
     form {
       display: flex;
       flex-flow: column nowrap;
+      width: 100%;
       input, textarea {
         margin-bottom: 5px;
-        width: 100%;
         resize: vertical;
         padding: 5px 5px;
+        @media only screen and (min-width: 400px) {
+        }
+        @media only screen and (min-width: 800px) {
+        }
+      }
+      textarea {
+        height: 80px;
+        @media only screen and (min-width: 400px) {
+          height: 100px;
+        }
+        @media only screen and (min-width: 800px) {
+        }
+
       }
 
       input:last-child {
@@ -36,18 +63,10 @@
           background-color: $hover;
           color: $hover-text;
         }
-
       }
-
-      @media only screen and (min-width: 800px) {
-        input, textarea {
-          width: 50%;
-        }
-
+      @media only screen and (min-width: 400px) {
+        width: 80%;
       }
     }
-
-
   }
-
 }

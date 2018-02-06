@@ -1,8 +1,5 @@
 import React from "react";
 
-export class ContactButton extends React.Component {
-    render() {
-        return <a href="#contact">CONTACT ME</a>
-    }
-
-}
+export const ContactButton = () => {
+    return <a href="#contact">CONTACT ME<i className="material-icons">keyboard_arrow_right</i></a>
+};

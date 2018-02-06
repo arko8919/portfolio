@@ -1,5 +1,4 @@
 @import "iconOverlay";
-@import "navTablet";
 
 %nav {
   .nav-container {
@@ -9,19 +8,23 @@
       height: 40px;
       display: flex;
       flex-flow: row-reverse nowrap;
+      align-items: center;
       padding: 3px 10px 0 10px;
       position: fixed;
       top: 0;
       left: 0;
       background-color: $background-nav;
       z-index: 1000;
+      @media only screen and (min-width: 400px) {
+        display: none;
+      }
 
       .material-icons.md {
         font-size: 36px;
-        color: $hover-text;
+        color: $white;
+        cursor: pointer;
         &:hover {
           color: $hover-nav;
-          cursor: pointer;
         }
       }
     }
@@ -32,13 +35,26 @@
       position: fixed;
       top: 40px;
       left: 0;
-      transform: translate3d(-100%, 0, 0);
-      transition: transform .3s cubic-bezier(0, .52, 0, 1);
+      transform: translate3d(-100%, 0, 0); // Hide side bar when page is loaded
+      transition: transform .3s cubic-bezier(0, .52, 0, 1); // Slide effect
       z-index: 1000;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-evenly;
+      align-items: center;
       background-color: $background-nav;
+      /* Medium screen */
+      @media only screen and (min-width: 400px) {
+        transform: translate3d(0, 0, 0);
+        top: 0;
+        justify-content: center;
+      }
+      /* Large screen */
+      @media only screen and (min-width: 800px) {
+        flex-flow: column wrap;
+        width: 80px;
+        height: 100%;
+      }
 
       a {
         position: relative;
@@ -46,54 +62,32 @@
         text-decoration: none;
         display: flex;
         justify-content: center;
-
+        align-items: center;
         .material-icons.md {
           color: $text-grey;
           &:hover {
-            color: $hover-nav;
+            color: $background-home;
           }
         }
-      }
-      /* Menu icons Overlay on all screens */
-      @extend %icon-overlay;
-    }
-
-    nav.hide {
-      transform: translate3d(-100%, 0, 0);
-    }
-
-    nav.show {
-      transform: translate3d(0, 0, 0);
-      overflow: hidden;
-    }
-
-    /* Tablets */
-    @media only screen and (min-width: 400px) {
-
-      .menu {
-        display: none;
-      }
-      nav {
-        transform: translate3d(0, 0, 0);
-        top: 0;
-        justify-content: center;
-        a {
+        @media only screen and (min-width: 400px) {
           padding: 10px 20px;
         }
       }
 
-      nav.hide {
+      /* Menu icons Overlay on all screens */
+      @extend %icon-overlay;
+    }
+
+    /* Add class to nav which hide and show menu */
+    .hide {
+      transform: translate3d(-100%, 0, 0);
+      @media only screen and (min-width: 400px) {
         transform: translate3d(0, 0, 0);
       }
     }
-
-    /* Desktop */
-    @media only screen and (min-width: 800px) {
-      nav {
-        flex-flow: column wrap;
-        width: 80px;
-        height: 100%;
-      }
+    .show {
+      transform: translate3d(0, 0, 0);
+      overflow: hidden;
     }
   }
 }

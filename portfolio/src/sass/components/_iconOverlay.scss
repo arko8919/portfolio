@@ -1,5 +1,7 @@
 @import "../helpers/placeholders";
 
+
+/* Menu Links */
 %icon-overlay {
   @each $item in $menuItems {
     a:nth-child(#{$counter}) {
@@ -32,6 +34,7 @@
 
       i:hover:after {
         opacity: 1;
+        color: $hover-nav;
       }
     }
     $counter: $counter + 1;

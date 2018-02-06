@@ -5,12 +5,20 @@
 @import "pages/myWork";
 @import "pages/contact";
 
-.container {
-  @extend %nav;
-  @extend %home;
-  @extend %about;
-  @extend %skills;
-  @extend %myWork;
-  @extend %contact;
+body {
+  font-family: $standard-font; /* Imported Google Font */
+  @media only screen and (min-width: 800px) {
+    margin-left: 80px;
+  }
+
+  .container {
+    @extend %nav;
+    @extend %home;
+    @extend %about;
+    @extend %skills;
+    @extend %myWork;
+    @extend %contact;
+  }
 }
+
 
