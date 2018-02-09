@@ -25,18 +25,14 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      @media only screen and (min-width: 500px) {
-        flex-flow: row wrap;
-      }
       @media only screen and (min-width: 700px) {
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
       }
       .content {
         position: relative;
-        @media only screen and (min-width: 500px) {
-          max-width: 230px;
-          height: auto;
-          margin: 5px;
+        margin: 5px;
+        box-shadow: 0 0 2px $text-grey;
+        @media only screen and (min-width: 600px) {
         }
         @media only screen and (min-width: 700px) {
           max-width: none;

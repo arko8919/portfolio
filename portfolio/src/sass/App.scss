@@ -4,6 +4,7 @@
 @import "pages/skills";
 @import "pages/myWork";
 @import "pages/contact";
+@import "layout/footer";
 
 body {
   font-family: $standard-font; /* Imported Google Font */
@@ -18,6 +19,7 @@ body {
     @extend %skills;
     @extend %myWork;
     @extend %contact;
+    @extend %footer;
   }
 }
 

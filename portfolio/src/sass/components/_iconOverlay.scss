@@ -23,6 +23,7 @@
       }
 
       i:after {
+        position: absolute;
         content: $item;
         opacity: 0;
         transition: opacity 0.5s;

@@ -6,6 +6,7 @@ import {About} from "./Pages/About/about";
 import {Skills} from "./Pages/Skills/skills";
 import {MyWork} from "./Pages/myWork/myWork";
 import {Contact} from "./Pages/Contact/contact";
+import {Footer} from "./Footer/footer";
 
 class App extends Component {
     render() {
@@ -17,6 +18,7 @@ class App extends Component {
                 <Skills/>
                 <MyWork/>
                 <Contact/>
+                <Footer/>
             </div>
         );
     }

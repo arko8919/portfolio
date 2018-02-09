@@ -7,11 +7,11 @@ export const MyWork = () => {
                 <div className="content">
                     <img src={require("./homers-on-the-job.jpg")}/>
                     <div className="overlayTop">
-                        <h3>Title</h3>
-                        <span>technology</span>
+                        <h3>URL shortener</h3>
+                        <span>JavaScript + jQuery</span>
                     </div>
                     <div className="overlayBottom">
-                        <a href="#myWork">Link</a>
+                        <a href="#myWork">go to site</a>
                     </div>
                 </div>
                 <div className="content">
@@ -21,7 +21,7 @@ export const MyWork = () => {
                         <span>technology</span>
                     </div>
                     <div className="overlayBottom">
-                        <a href="#myWork">Link</a>
+                        <a href="#myWork">go to site</a>
                     </div>
                 </div>
                 <div className="content">
@@ -31,7 +31,7 @@ export const MyWork = () => {
                         <span>technology</span>
                     </div>
                     <div className="overlayBottom">
-                        <a href="#myWork">Link</a>
+                        <a href="#myWork">go to site</a>
                     </div>
                 </div>
             </div>

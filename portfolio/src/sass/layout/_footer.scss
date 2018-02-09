@@ -1,0 +1,19 @@
+@import "../helpers/placeholders";
+
+%footer {
+  footer {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 300px;
+    background-color: $background-home;
+    .icons {
+      margin-top: 50px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      a {
+        font-size: 64px;
+      }
+    }
+  }
+}
