@@ -1,17 +1,7 @@
 @import "../helpers/placeholders";
-@import "../components/fallingLetters";
+@import "../components/header";
 
 %home {
-  @keyframes move {
-    0% {
-      top: -300%;
-      opacity: 0
-    }
-    100% {
-      top: 0;
-      opacity: 1;
-    }
-  }
 
   #home {
     padding: 100px 0 40px 0;
@@ -40,7 +30,7 @@
         font-size: 8em;
       }
 
-      @extend %paragraphs-falling-letters;
+      @extend %header;
     }
 
     .subHeading {
