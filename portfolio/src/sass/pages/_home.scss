@@ -6,15 +6,19 @@
   #home {
     padding: 100px 0 40px 0;
     display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
+    @include flex-flow(column, nowrap);
+    @include align-items(flex-start);
     min-height: 100vh;
     font-size: 14px;
     background-color: $background-home;
     @media only screen and (min-width: 400px) {
       padding: 80px 0 40px 0;
-      align-items: center;
-      justify-content: center;
+    }
+    @media only screen and (min-width: 800px) {
+      padding: 80px 0 40px 0;
+      @include flex-flow(column, wrap);
+      @include align-items(center);
+      @include justify-content(center);
     }
 
     .heading {
@@ -23,23 +27,40 @@
       margin: 0;
       font-family: $mono-font;
       @media only screen and (min-width: 400px) {
-        text-align: center;
         font-size: 5em;
       }
       @media only screen and (min-width: 800px) {
+        text-align: center;
         font-size: 8em;
       }
+      @extend %header; // Add Main Header
+    }
 
-      @extend %header;
+    @keyframes showSubHeading {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
 
     .subHeading {
       margin-top: 0;
-      margin-left: 20px;
+      margin-left: 15px;
       padding: 2px;
       font-size: 1.5em;
       color: $text-grey;
       text-shadow: 1px 1px 4px $white;
+      animation-name: showSubHeading;
+      animation-duration: 3s;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      @media only screen and (min-width: 300px) {
+        margin-left: 20px;
+      }
       @media only screen and (min-width: 400px) {
         font-size: 2em;
       }
@@ -51,20 +72,28 @@
     a {
       font-family: $mono-font;
       font-size: 1em;
-      margin-left: 20px;
+      margin-left: 15px;
       text-decoration: none;
       border: 1px solid $white;
-      padding: 5px;
+      padding: 5px 10px;
       background-color: $background-home;
       box-shadow: 0 0 15px #252627;
       border-radius: 5px;
-      color: $white;
+      color: black;
       font-weight: bold;
       display: flex;
       align-items: center;
       transition: color 0.5s, background-color 1.5s, text-shadow 0.5s;
+
+      @media only screen and (min-width: 300px) {
+        margin-left: 20px;
+      }
       @media only screen and (min-width: 400px) {
-        padding: 10px;
+        padding: 10px 15px;
+        font-size: 1.2em;
+      }
+      @media only screen and (min-width: 800px) {
+
       }
 
       i {

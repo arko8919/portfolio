@@ -4,16 +4,10 @@ import {ContactButton} from "./contactButton";
 const firstParagraph = [
     <span>H</span>,
     <span>i</span>,
-    <span className="special">,</span>,
-];
-
-const secondParagraph = [
+    <span>,</span>,
     <span>I</span>,
-    <span className="special">'</span>,
+    <span>'</span>,
     <span>m</span>,
-];
-
-const thirdParagraph = [
     <span>A</span>,
     <span>r</span>,
     <span>t</span>,
@@ -31,45 +25,55 @@ export class Home extends React.Component {
     constructor(props) {
         super(props);
 
-
         this.state = {
-            element:
-                <div id="home">
-                    <h1 className="heading">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </h1>
-                    <p className="subHeading">I am Web Developer</p>
-                    <ContactButton/>
-                </div>
+            paragraphOne: [],
+            paragraphTwo: [],
+            paragraphThree: []
+
         };
+
     }
 
+
     componentDidMount() {
+        const intervalOne = setInterval(function () {
+            if ( i < 3) {
+                addFirstParagraph.push(firstParagraph[i]);
+                this.setState({
+                    paragraphOne: addFirstParagraph
+                });
+            }
 
+            else if (  i < 6) {
+                addSecondParagraph.push(firstParagraph[i]);
+                this.setState({
+                    paragraphTwo: addSecondParagraph
+                });
+            }
 
-        setInterval(function () {
-            addFirstParagraph.push(firstParagraph[i]);
-            addSecondParagraph.push(secondParagraph[i]);
-            addThirdParagraph.push(thirdParagraph[i]);
-            this.setState({
-                element:
-                    <div id="home">
-                        <h1 className="heading">
-                            <p>{addFirstParagraph}</p>
-                            <p>{addSecondParagraph}</p>
-                            <p>{addThirdParagraph}</p>
-                        </h1>
-                        <p className="subHeading">I am Web Developer</p>
-                        <ContactButton/>
-                    </div>
-            });
+            else if ( i >= 6 ) {
+                addThirdParagraph.push(firstParagraph[i]);
+                this.setState({
+                    paragraphThree: addThirdParagraph
+                });
+            }
             i++;
-        }.bind(this), Math.floor(Math.random() * 400));
+        }.bind(this), 100);
+
+
     }
 
     render() {
-        return this.state.element;
+        return (
+            <div id="home">
+                <h1 className="heading">
+                    <p>{this.state.paragraphOne}</p>
+                    <p>{this.state.paragraphTwo}</p>
+                    <p>{this.state.paragraphThree}</p>
+                </h1>
+                <p className="subHeading">I am Web Developer</p>
+                <ContactButton/>
+            </div>
+        )
     }
 }

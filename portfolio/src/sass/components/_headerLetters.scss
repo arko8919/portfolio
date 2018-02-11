@@ -1,0 +1,23 @@
+@import "../helpers/mixins";
+
+/* Header Letters */
+@mixin headerLetters($items, $inc) {
+  // Styling for each header letters
+  @for $i from 1 through $items {
+    span:nth-child(#{$i}) {
+      left: $left;
+      color: $heading;
+      @include animation-delay(0s);
+      @include transition(all, 0.12s, ease-out);
+      &:hover
+      {
+        cursor: pointer;
+        color: $hover-nav;
+        @include transform(scale(1.2));
+      }
+    }
+    // Increase space between letters ( span elements ). Base on font size space need to be adjusted
+    $left: $left + $inc;
+
+  }
+}

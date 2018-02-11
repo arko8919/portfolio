@@ -1,76 +1,100 @@
-@import "../helpers/mixins";
+@import "headerLetters";
 
 %header {
+  /* Header Animation */
   @keyframes move {
-    0% {
+    from {
+      @include transform(rotate3d(1, 1, 1, 360deg));
       top: -300%;
-      opacity: 0
+      opacity: 0;
     }
-    100% {
+    to {
+      @include transform(rotate3d(0, 0, 0, 0deg));
       top: 0;
       opacity: 1;
     }
   }
+  /* Header Animation End here */
 
-  p:nth-child(1) {
+  p {
     position: relative;
-    min-width: 80px;
-    display: block;
-    margin: 0 0 0 20px;
+    display: inline-block;
     min-height: 60px;
-    @include headerLetters(3 , 25); // $items --> styling header letters, $inc --> inc. distance between letters
     @media only screen and (min-width: 400px) {
       min-height: 100px;
-      min-width: 120px;
-      margin: 0;
-      display: inline-block;
-      @include headerLetters(3 , 40);
     }
     @media only screen and (min-width: 800px) {
-      min-width: 200px;
       min-height: 140px;
+    }
+    span {
+      position: absolute;
+      opacity: 1;
+      top: 0;
+      @include animation-name(move);
+      @include animation-duration(2s);
+      @include animation-timing-function(cubic-bezier(.91, .8, .54, 1.39));
+      @include animation-delay(0s);
+      @extend %text-3d-thin; // Add 3d effect on header letters
+    }
+  }
+  // Positioning of all header letters and paragraphs
+  p:nth-child(1) {
+    min-width: 80px;
+    margin: 0 0 0 15px;
+    @include headerLetters(3, 27); // $items --> styling header letters, $inc --> inc. distance between letters
+
+    @media only screen and (min-width: 300px) {
+      display: block;
+      max-width: 80px;
+      margin: 0 0 0 20px;
+    }
+    @media only screen and (min-width: 400px) {
+      min-width: 135px;
+      @include headerLetters(3, 42); // $items --> styling header letters, $inc --> inc. distance between letters
+    }
+    @media only screen and (min-width: 800px) {
       display: inline-block;
-      @include headerLetters(3 , 60);
+      min-width: 200px;
+      @include headerLetters(3, 62); // $items --> styling header letters, $inc --> inc. distance between letters
     }
   }
 
   p:nth-child(2) {
-    position: relative;
-    display: inline-block;
-    min-width: 70px;
-    margin: 0 0 0 20px;
-    min-height: 60px;
-    @include headerLetters(3, 15);
+    min-width: 80px;
+    margin: 0;
+    @include headerLetters(3, 20); // $items --> styling header letters, $inc --> inc. distance between letters
+
+    @media only screen and (min-width: 300px) {
+      min-width: 90px;
+      margin: 0 0 0 20px;
+    }
     @media only screen and (min-width: 400px) {
-      min-height: 100px;
-      min-width: 120px;
-      margin: 0;
-      @include headerLetters(3, 30);
+      min-width: 135px;
+      @include headerLetters(3, 32); // $items --> styling header letters, $inc --> inc. distance between letters
     }
     @media only screen and (min-width: 800px) {
-      margin: 0;
-      min-height: 140px;
       min-width: 200px;
-      @include headerLetters(3, 45);
+      margin: 0;
+      @include headerLetters(3, 47); // $items --> styling header letters, $inc --> inc. distance between letters
     }
   }
 
   p:nth-child(3) {
-    position: relative;
-    display: inline-block;
-    min-width: 130px;
-    margin: 0;
-    min-height: 60px;
-    @include headerLetters(5, 25);
+    min-width: 150px;
+    margin: 0 0 0 15px;
+    @include headerLetters(5, 27); // $items --> styling header letters, $inc --> inc. distance between letters
+
+    @media only screen and (min-width: 300px) {
+      margin: 0;
+    }
     @media only screen and (min-width: 400px) {
-      min-height: 100px;
-      min-width: 200px;
-      @include headerLetters(5, 35);
+      min-width: 220px;
+      @include headerLetters(5, 40); // $items --> styling header letters, $inc --> inc. distance between letters
     }
     @media only screen and (min-width: 800px) {
-      min-height: 140px;
-      min-width: 300px;
-      @include headerLetters(5, 60);
+      min-width: 340px;
+      margin: 0 0 0 20px;
+      @include headerLetters(5, 65); // $items --> styling header letters, $inc --> inc. distance between letters
     }
   }
 }

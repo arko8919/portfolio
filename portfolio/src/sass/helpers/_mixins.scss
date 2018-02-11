@@ -1,24 +1,63 @@
 @import "placeholders";
 
-
-/* Header Letters */
-@mixin headerLetters($items, $inc) {
-  @for $i from 1 through $items {
-    span:nth-child(#{$i}) {
-      position: absolute;
-      opacity: 0;
-      top: -300px;
-      left: $left;
-      color: $heading;
-      text-shadow: 2px 2px 10px $white;
-      animation-name: move;
-      animation-delay: 0s;
-      animation-duration: $randomNumber;
-      animation-fill-mode: forwards;
-      animation-timing-function: cubic-bezier(.91, .8, .54, 1.39);
-    }
-    /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-    $left: $left + $inc;
-  }
+// Animations
+@mixin animation-name($name) {
+  -webkit-animation-name: $name;
+  -moz-animation-name: $name;
+  -o-animation-name: $name;
+  animation-name: $name;
 }
-/* Falling letters ENDS HERE */
+
+@mixin animation-duration($time) {
+  -webkit-animation-duration: $time;
+  -moz-animation-duration: $time;
+  -o-animation-duration: $time;
+  animation-duration: $time;
+}
+
+@mixin animation-delay($time) {
+  -webkit-animation-delay: $time;
+  -moz-animation-delay: $time;
+  -o-animation-delay: $time;
+  animation-delay: $time;
+}
+
+@mixin animation-timing-function($timing) {
+  -webkit-animation-timing-function: $timing;
+  -moz-animation-timing-function: $timing;
+  -o-animation-timing-function: $timing;
+  animation-timing-function: $timing;
+}
+
+// Transition / Transform
+@mixin transition($property, $time, $timing) {
+  -webkit-transition: $property $time $timing;
+  -moz-transition: $property $time $timing;
+  -o-transition: $property $time $timing;
+  transition: $property $time $timing;
+}
+
+@mixin transform($value) {
+  -webkit-transform: ($value);
+  -moz-transform: ($value);
+  -o-transform: ($value);
+  -ms-transform: ($value);
+  transform: ($value);
+}
+
+// Flex
+@mixin flex-flow($direction, $wrap) {
+  -webkit-flex-flow: $direction $wrap;
+  flex-flow: $direction $wrap;
+}
+
+@mixin align-items($value) {
+  -webkit-align-items: $value;
+  align-items: $value;
+}
+
+@mixin justify-content($value) {
+  -webkit-justify-content: $value;
+  justify-content: $value;
+
+}

@@ -11,6 +11,15 @@ body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-
   top: 50%;
   transform: translate(-50%, -50%); }
 
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
+
 /* Menu Links */
 body .container .nav-container nav a:nth-child(1) i:before {
   content: "";
@@ -210,6 +219,15 @@ body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-
   top: 50%;
   transform: translate(-50%, -50%); }
 
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
+
 /* Colors */
 /* odd */
 /* even */
@@ -223,504 +241,757 @@ body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-
   top: 50%;
   transform: translate(-50%, -50%); }
 
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
+
 /* Header Letters */
-/* Falling letters ENDS HERE */
+body .container #home .heading {
+  /* Header Animation */
+  /* Header Animation End here */ }
 @keyframes move {
-  0% {
+  from {
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
+    -moz-transform: rotate3d(1, 1, 1, 360deg);
+    -o-transform: rotate3d(1, 1, 1, 360deg);
+    -ms-transform: rotate3d(1, 1, 1, 360deg);
+    transform: rotate3d(1, 1, 1, 360deg);
     top: -300%;
     opacity: 0; }
-  100% {
+  to {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+    -moz-transform: rotate3d(0, 0, 0, 0deg);
+    -o-transform: rotate3d(0, 0, 0, 0deg);
+    -ms-transform: rotate3d(0, 0, 0, 0deg);
+    transform: rotate3d(0, 0, 0, 0deg);
     top: 0;
     opacity: 1; } }
-body .container #home .heading p:nth-child(1) {
-  position: relative;
-  min-width: 80px;
-  display: block;
-  margin: 0 0 0 20px;
-  min-height: 60px;
-  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
-  body .container #home .heading p:nth-child(1) span:nth-child(1) {
-    position: absolute;
-    opacity: 0;
-    top: -300px;
-    left: 0px;
-    color: #252627;
-    text-shadow: 2px 2px 10px #fff;
-    animation-name: move;
-    animation-delay: 0s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-  body .container #home .heading p:nth-child(1) span:nth-child(2) {
-    position: absolute;
-    opacity: 0;
-    top: -300px;
-    left: 25px;
-    color: #252627;
-    text-shadow: 2px 2px 10px #fff;
-    animation-name: move;
-    animation-delay: 0s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-  body .container #home .heading p:nth-child(1) span:nth-child(3) {
-    position: absolute;
-    opacity: 0;
-    top: -300px;
-    left: 50px;
-    color: #252627;
-    text-shadow: 2px 2px 10px #fff;
-    animation-name: move;
-    animation-delay: 0s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-  @media only screen and (min-width: 400px) {
-    body .container #home .heading p:nth-child(1) {
-      min-height: 100px;
-      min-width: 120px;
-      margin: 0;
-      display: inline-block;
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
-      body .container #home .heading p:nth-child(1) span:nth-child(1) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 0px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(1) span:nth-child(2) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 40px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(1) span:nth-child(3) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 80px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); } }
-  @media only screen and (min-width: 800px) {
-    body .container #home .heading p:nth-child(1) {
-      min-width: 200px;
-      min-height: 140px;
-      display: inline-block;
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
-      body .container #home .heading p:nth-child(1) span:nth-child(1) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 0px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(1) span:nth-child(2) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 60px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(1) span:nth-child(3) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 120px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); } }
-body .container #home .heading p:nth-child(2) {
-  position: relative;
-  display: inline-block;
-  min-width: 70px;
-  margin: 0 0 0 20px;
-  min-height: 60px;
-  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
-  body .container #home .heading p:nth-child(2) span:nth-child(1) {
-    position: absolute;
-    opacity: 0;
-    top: -300px;
-    left: 0px;
-    color: #252627;
-    text-shadow: 2px 2px 10px #fff;
-    animation-name: move;
-    animation-delay: 0s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-  body .container #home .heading p:nth-child(2) span:nth-child(2) {
-    position: absolute;
-    opacity: 0;
-    top: -300px;
-    left: 15px;
-    color: #252627;
-    text-shadow: 2px 2px 10px #fff;
-    animation-name: move;
-    animation-delay: 0s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-  body .container #home .heading p:nth-child(2) span:nth-child(3) {
-    position: absolute;
-    opacity: 0;
-    top: -300px;
-    left: 30px;
-    color: #252627;
-    text-shadow: 2px 2px 10px #fff;
-    animation-name: move;
-    animation-delay: 0s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-  @media only screen and (min-width: 400px) {
-    body .container #home .heading p:nth-child(2) {
-      min-height: 100px;
-      min-width: 120px;
-      margin: 0;
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
-      body .container #home .heading p:nth-child(2) span:nth-child(1) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 0px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(2) span:nth-child(2) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 30px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(2) span:nth-child(3) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 60px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); } }
-  @media only screen and (min-width: 800px) {
-    body .container #home .heading p:nth-child(2) {
-      margin: 0;
-      min-height: 140px;
-      min-width: 200px;
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
-      body .container #home .heading p:nth-child(2) span:nth-child(1) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 0px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(2) span:nth-child(2) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 45px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(2) span:nth-child(3) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 90px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); } }
-body .container #home .heading p:nth-child(3) {
-  position: relative;
-  display: inline-block;
-  min-width: 130px;
-  margin: 0;
-  min-height: 60px;
-  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-  /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
-  body .container #home .heading p:nth-child(3) span:nth-child(1) {
-    position: absolute;
-    opacity: 0;
-    top: -300px;
-    left: 0px;
-    color: #252627;
-    text-shadow: 2px 2px 10px #fff;
-    animation-name: move;
-    animation-delay: 0s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-  body .container #home .heading p:nth-child(3) span:nth-child(2) {
-    position: absolute;
-    opacity: 0;
-    top: -300px;
-    left: 25px;
-    color: #252627;
-    text-shadow: 2px 2px 10px #fff;
-    animation-name: move;
-    animation-delay: 0s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-  body .container #home .heading p:nth-child(3) span:nth-child(3) {
-    position: absolute;
-    opacity: 0;
-    top: -300px;
-    left: 50px;
-    color: #252627;
-    text-shadow: 2px 2px 10px #fff;
-    animation-name: move;
-    animation-delay: 0s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-  body .container #home .heading p:nth-child(3) span:nth-child(4) {
-    position: absolute;
-    opacity: 0;
-    top: -300px;
-    left: 75px;
-    color: #252627;
-    text-shadow: 2px 2px 10px #fff;
-    animation-name: move;
-    animation-delay: 0s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-  body .container #home .heading p:nth-child(3) span:nth-child(5) {
-    position: absolute;
-    opacity: 0;
-    top: -300px;
-    left: 100px;
-    color: #252627;
-    text-shadow: 2px 2px 10px #fff;
-    animation-name: move;
-    animation-delay: 0s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-  @media only screen and (min-width: 400px) {
-    body .container #home .heading p:nth-child(3) {
-      min-height: 100px;
-      min-width: 200px;
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
-      body .container #home .heading p:nth-child(3) span:nth-child(1) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 0px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(3) span:nth-child(2) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 35px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(3) span:nth-child(3) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 70px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(3) span:nth-child(4) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 105px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(3) span:nth-child(5) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 140px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); } }
-  @media only screen and (min-width: 800px) {
-    body .container #home .heading p:nth-child(3) {
-      min-height: 140px;
-      min-width: 300px;
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */
-      /* Increase space between letters ( span elements ). Base on font size space need to be adjusted */ }
-      body .container #home .heading p:nth-child(3) span:nth-child(1) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 0px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(3) span:nth-child(2) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 60px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(3) span:nth-child(3) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 120px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(3) span:nth-child(4) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 180px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); }
-      body .container #home .heading p:nth-child(3) span:nth-child(5) {
-        position: absolute;
-        opacity: 0;
-        top: -300px;
-        left: 240px;
-        color: #252627;
-        text-shadow: 2px 2px 10px #fff;
-        animation-name: move;
-        animation-delay: 0s;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39); } }
+  body .container #home .heading p {
+    position: relative;
+    display: inline-block;
+    min-height: 60px; }
+    @media only screen and (min-width: 400px) {
+      body .container #home .heading p {
+        min-height: 100px; } }
+    @media only screen and (min-width: 800px) {
+      body .container #home .heading p {
+        min-height: 140px; } }
+    body .container #home .heading p span {
+      position: absolute;
+      opacity: 1;
+      top: 0;
+      -webkit-animation-name: move;
+      -moz-animation-name: move;
+      -o-animation-name: move;
+      animation-name: move;
+      -webkit-animation-duration: 2s;
+      -moz-animation-duration: 2s;
+      -o-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39);
+      -moz-animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39);
+      -o-animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39);
+      animation-timing-function: cubic-bezier(0.91, 0.8, 0.54, 1.39);
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s; }
+  body .container #home .heading p:nth-child(1) {
+    min-width: 80px;
+    margin: 0 0 0 15px; }
+    body .container #home .heading p:nth-child(1) span:nth-child(1) {
+      left: 0px;
+      color: #252627;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition: all 0.12s ease-out;
+      -o-transition: all 0.12s ease-out;
+      transition: all 0.12s ease-out; }
+      body .container #home .heading p:nth-child(1) span:nth-child(1):hover {
+        cursor: pointer;
+        color: #08FDD8;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+    body .container #home .heading p:nth-child(1) span:nth-child(2) {
+      left: 27px;
+      color: #252627;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition: all 0.12s ease-out;
+      -o-transition: all 0.12s ease-out;
+      transition: all 0.12s ease-out; }
+      body .container #home .heading p:nth-child(1) span:nth-child(2):hover {
+        cursor: pointer;
+        color: #08FDD8;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+    body .container #home .heading p:nth-child(1) span:nth-child(3) {
+      left: 54px;
+      color: #252627;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition: all 0.12s ease-out;
+      -o-transition: all 0.12s ease-out;
+      transition: all 0.12s ease-out; }
+      body .container #home .heading p:nth-child(1) span:nth-child(3):hover {
+        cursor: pointer;
+        color: #08FDD8;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+    @media only screen and (min-width: 300px) {
+      body .container #home .heading p:nth-child(1) {
+        display: block;
+        max-width: 80px;
+        margin: 0 0 0 20px; } }
+    @media only screen and (min-width: 400px) {
+      body .container #home .heading p:nth-child(1) {
+        min-width: 135px; }
+        body .container #home .heading p:nth-child(1) span:nth-child(1) {
+          left: 0px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(1) span:nth-child(1):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(1) span:nth-child(2) {
+          left: 42px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(1) span:nth-child(2):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(1) span:nth-child(3) {
+          left: 84px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(1) span:nth-child(3):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); } }
+    @media only screen and (min-width: 800px) {
+      body .container #home .heading p:nth-child(1) {
+        display: inline-block;
+        min-width: 200px; }
+        body .container #home .heading p:nth-child(1) span:nth-child(1) {
+          left: 0px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(1) span:nth-child(1):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(1) span:nth-child(2) {
+          left: 62px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(1) span:nth-child(2):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(1) span:nth-child(3) {
+          left: 124px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(1) span:nth-child(3):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); } }
+  body .container #home .heading p:nth-child(2) {
+    min-width: 80px;
+    margin: 0; }
+    body .container #home .heading p:nth-child(2) span:nth-child(1) {
+      left: 0px;
+      color: #252627;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition: all 0.12s ease-out;
+      -o-transition: all 0.12s ease-out;
+      transition: all 0.12s ease-out; }
+      body .container #home .heading p:nth-child(2) span:nth-child(1):hover {
+        cursor: pointer;
+        color: #08FDD8;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+    body .container #home .heading p:nth-child(2) span:nth-child(2) {
+      left: 20px;
+      color: #252627;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition: all 0.12s ease-out;
+      -o-transition: all 0.12s ease-out;
+      transition: all 0.12s ease-out; }
+      body .container #home .heading p:nth-child(2) span:nth-child(2):hover {
+        cursor: pointer;
+        color: #08FDD8;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+    body .container #home .heading p:nth-child(2) span:nth-child(3) {
+      left: 40px;
+      color: #252627;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition: all 0.12s ease-out;
+      -o-transition: all 0.12s ease-out;
+      transition: all 0.12s ease-out; }
+      body .container #home .heading p:nth-child(2) span:nth-child(3):hover {
+        cursor: pointer;
+        color: #08FDD8;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+    @media only screen and (min-width: 300px) {
+      body .container #home .heading p:nth-child(2) {
+        min-width: 90px;
+        margin: 0 0 0 20px; } }
+    @media only screen and (min-width: 400px) {
+      body .container #home .heading p:nth-child(2) {
+        min-width: 135px; }
+        body .container #home .heading p:nth-child(2) span:nth-child(1) {
+          left: 0px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(2) span:nth-child(1):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(2) span:nth-child(2) {
+          left: 32px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(2) span:nth-child(2):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(2) span:nth-child(3) {
+          left: 64px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(2) span:nth-child(3):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); } }
+    @media only screen and (min-width: 800px) {
+      body .container #home .heading p:nth-child(2) {
+        min-width: 200px;
+        margin: 0; }
+        body .container #home .heading p:nth-child(2) span:nth-child(1) {
+          left: 0px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(2) span:nth-child(1):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(2) span:nth-child(2) {
+          left: 47px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(2) span:nth-child(2):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(2) span:nth-child(3) {
+          left: 94px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(2) span:nth-child(3):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); } }
+  body .container #home .heading p:nth-child(3) {
+    min-width: 150px;
+    margin: 0 0 0 15px; }
+    body .container #home .heading p:nth-child(3) span:nth-child(1) {
+      left: 0px;
+      color: #252627;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition: all 0.12s ease-out;
+      -o-transition: all 0.12s ease-out;
+      transition: all 0.12s ease-out; }
+      body .container #home .heading p:nth-child(3) span:nth-child(1):hover {
+        cursor: pointer;
+        color: #08FDD8;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+    body .container #home .heading p:nth-child(3) span:nth-child(2) {
+      left: 27px;
+      color: #252627;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition: all 0.12s ease-out;
+      -o-transition: all 0.12s ease-out;
+      transition: all 0.12s ease-out; }
+      body .container #home .heading p:nth-child(3) span:nth-child(2):hover {
+        cursor: pointer;
+        color: #08FDD8;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+    body .container #home .heading p:nth-child(3) span:nth-child(3) {
+      left: 54px;
+      color: #252627;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition: all 0.12s ease-out;
+      -o-transition: all 0.12s ease-out;
+      transition: all 0.12s ease-out; }
+      body .container #home .heading p:nth-child(3) span:nth-child(3):hover {
+        cursor: pointer;
+        color: #08FDD8;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+    body .container #home .heading p:nth-child(3) span:nth-child(4) {
+      left: 81px;
+      color: #252627;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition: all 0.12s ease-out;
+      -o-transition: all 0.12s ease-out;
+      transition: all 0.12s ease-out; }
+      body .container #home .heading p:nth-child(3) span:nth-child(4):hover {
+        cursor: pointer;
+        color: #08FDD8;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+    body .container #home .heading p:nth-child(3) span:nth-child(5) {
+      left: 108px;
+      color: #252627;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition: all 0.12s ease-out;
+      -o-transition: all 0.12s ease-out;
+      transition: all 0.12s ease-out; }
+      body .container #home .heading p:nth-child(3) span:nth-child(5):hover {
+        cursor: pointer;
+        color: #08FDD8;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+    @media only screen and (min-width: 300px) {
+      body .container #home .heading p:nth-child(3) {
+        margin: 0; } }
+    @media only screen and (min-width: 400px) {
+      body .container #home .heading p:nth-child(3) {
+        min-width: 220px; }
+        body .container #home .heading p:nth-child(3) span:nth-child(1) {
+          left: 0px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(3) span:nth-child(1):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(3) span:nth-child(2) {
+          left: 40px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(3) span:nth-child(2):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(3) span:nth-child(3) {
+          left: 80px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(3) span:nth-child(3):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(3) span:nth-child(4) {
+          left: 120px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(3) span:nth-child(4):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(3) span:nth-child(5) {
+          left: 160px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(3) span:nth-child(5):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); } }
+    @media only screen and (min-width: 800px) {
+      body .container #home .heading p:nth-child(3) {
+        min-width: 340px;
+        margin: 0 0 0 20px; }
+        body .container #home .heading p:nth-child(3) span:nth-child(1) {
+          left: 0px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(3) span:nth-child(1):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(3) span:nth-child(2) {
+          left: 65px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(3) span:nth-child(2):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(3) span:nth-child(3) {
+          left: 130px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(3) span:nth-child(3):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(3) span:nth-child(4) {
+          left: 195px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(3) span:nth-child(4):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+        body .container #home .heading p:nth-child(3) span:nth-child(5) {
+          left: 260px;
+          color: #252627;
+          -webkit-animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -o-animation-delay: 0s;
+          animation-delay: 0s;
+          -webkit-transition: all 0.12s ease-out;
+          -moz-transition: all 0.12s ease-out;
+          -o-transition: all 0.12s ease-out;
+          transition: all 0.12s ease-out; }
+          body .container #home .heading p:nth-child(3) span:nth-child(5):hover {
+            cursor: pointer;
+            color: #08FDD8;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); } }
 
 body .container #home {
   padding: 100px 0 40px 0;
   display: flex;
+  -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-align-items: flex-start;
   align-items: flex-start;
   min-height: 100vh;
   font-size: 14px;
   background-color: #E74C3C; }
   @media only screen and (min-width: 400px) {
     body .container #home {
+      padding: 80px 0 40px 0; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home {
       padding: 80px 0 40px 0;
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      -webkit-align-items: center;
       align-items: center;
+      -webkit-justify-content: center;
       justify-content: center; } }
   body .container #home .heading {
     font-size: 3em;
@@ -729,18 +1000,31 @@ body .container #home {
     font-family: "Roboto Mono", monospace; }
     @media only screen and (min-width: 400px) {
       body .container #home .heading {
-        text-align: center;
         font-size: 5em; } }
     @media only screen and (min-width: 800px) {
       body .container #home .heading {
+        text-align: center;
         font-size: 8em; } }
+@keyframes showSubHeading {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
   body .container #home .subHeading {
     margin-top: 0;
-    margin-left: 20px;
+    margin-left: 15px;
     padding: 2px;
     font-size: 1.5em;
     color: #616161;
-    text-shadow: 1px 1px 4px #fff; }
+    text-shadow: 1px 1px 4px #fff;
+    animation-name: showSubHeading;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0; }
+    @media only screen and (min-width: 300px) {
+      body .container #home .subHeading {
+        margin-left: 20px; } }
     @media only screen and (min-width: 400px) {
       body .container #home .subHeading {
         font-size: 2em; } }
@@ -750,21 +1034,25 @@ body .container #home {
   body .container #home a {
     font-family: "Roboto Mono", monospace;
     font-size: 1em;
-    margin-left: 20px;
+    margin-left: 15px;
     text-decoration: none;
     border: 1px solid #fff;
-    padding: 5px;
+    padding: 5px 10px;
     background-color: #E74C3C;
     box-shadow: 0 0 15px #252627;
     border-radius: 5px;
-    color: #fff;
+    color: black;
     font-weight: bold;
     display: flex;
     align-items: center;
     transition: color 0.5s, background-color 1.5s, text-shadow 0.5s; }
+    @media only screen and (min-width: 300px) {
+      body .container #home a {
+        margin-left: 20px; } }
     @media only screen and (min-width: 400px) {
       body .container #home a {
-        padding: 10px; } }
+        padding: 10px 15px;
+        font-size: 1.2em; } }
     body .container #home a i {
       padding-left: 5px;
       transition: all 0.5s; }
@@ -787,6 +1075,15 @@ body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
+
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
 
 body .container #about {
   display: flex;
@@ -828,6 +1125,15 @@ body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
+
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
 
 body .container #skills {
   padding: 40px 0 60px 0;
@@ -886,6 +1192,15 @@ body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-
   top: 50%;
   transform: translate(-50%, -50%); }
 
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
+
 /* Colors */
 /* odd */
 /* even */
@@ -898,6 +1213,15 @@ body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
+
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
 
 body .container #myWork .container .content .overlayTop {
   display: flex;
@@ -1028,6 +1352,15 @@ body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-
   top: 50%;
   transform: translate(-50%, -50%); }
 
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
+
 body .container #contact {
   padding: 40px 10px;
   font-size: 14px;
@@ -1123,6 +1456,15 @@ body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
+
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
 
 body .container footer {
   display: flex;
