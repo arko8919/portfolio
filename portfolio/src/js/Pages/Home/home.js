@@ -1,7 +1,7 @@
 import React from "react";
 import {ContactButton} from "./contactButton";
 
-const firstParagraph = [
+const headingLetters = [
     <span>H</span>,
     <span>i</span>,
     <span>,</span>,
@@ -15,11 +15,10 @@ const firstParagraph = [
     <span>r</span>
 ];
 
-
 let i = 0;
-let addFirstParagraph = [];
-let addSecondParagraph = [];
-let addThirdParagraph = [];
+let firstParagraph = [];
+let secondParagraph = [];
+let thirdParagraph = [];
 
 export class Home extends React.Component {
     constructor(props) {
@@ -34,33 +33,33 @@ export class Home extends React.Component {
 
     }
 
-
     componentDidMount() {
         const intervalOne = setInterval(function () {
             if ( i < 3) {
-                addFirstParagraph.push(firstParagraph[i]);
+                firstParagraph.push(headingLetters[i]);
                 this.setState({
-                    paragraphOne: addFirstParagraph
+                    paragraphOne: firstParagraph
                 });
             }
 
             else if (  i < 6) {
-                addSecondParagraph.push(firstParagraph[i]);
+                secondParagraph.push(headingLetters[i]);
                 this.setState({
-                    paragraphTwo: addSecondParagraph
+                    paragraphTwo: secondParagraph
                 });
             }
 
             else if ( i >= 6 ) {
-                addThirdParagraph.push(firstParagraph[i]);
+                thirdParagraph.push(headingLetters[i]);
                 this.setState({
-                    paragraphThree: addThirdParagraph
+                    paragraphThree: thirdParagraph
                 });
+            }
+            if(i === headingLetters.length) {
+                clearInterval(intervalOne);
             }
             i++;
         }.bind(this), 100);
-
-
     }
 
     render() {
@@ -71,7 +70,7 @@ export class Home extends React.Component {
                     <p>{this.state.paragraphTwo}</p>
                     <p>{this.state.paragraphThree}</p>
                 </h1>
-                <p className="subHeading">I am Web Developer</p>
+                <p className="sub-heading">I am Web Developer</p>
                 <ContactButton/>
             </div>
         )

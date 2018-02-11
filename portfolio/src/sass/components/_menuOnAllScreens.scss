@@ -1,0 +1,55 @@
+@import "../components/iconOverlay";
+
+%menu-on-all-screens {
+  // Small Screens
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    background-color: $background-nav;
+    @include transform(translate3d(-100%, 0, 0)); // Hide side bar when page is loaded
+    @include transition(transform, .3s, cubic-bezier(0, .52, 0, 1)); // Slide effect
+    @include flex-flow(row, nowrap);
+    @include justify-content(space-evenly);
+    @include align-items(center);
+
+    // Medium Screens
+    @media only screen and (min-width: 400px) {
+      top: 0;
+      @include transform(translate3d(0, 0, 0));
+      @include justify-content(center);
+    }
+
+    // Large Screens
+    @media only screen and (min-width: 800px) {
+      width: 80px;
+      height: 100%;
+      @include flex-flow(column, wrap);
+    }
+
+    // Links
+    a {
+      position: relative;
+      padding: 10px 0;
+      text-decoration: none;
+      display: flex;
+      @include justify-content(center);
+      @include align-items(center);
+      .material-icons.md {
+        color: $text-grey;
+        &:hover {
+          color: $background-home;
+        }
+      }
+      @media only screen and (min-width: 400px) {
+        padding: 10px 20px;
+      }
+    }
+
+    // Menu icons Overlay on all screens. ($counter, $menuItems)
+    @include iconOverlay(1, ("HOME", "ABOUT", "SKILLS", "MY WORK", "CONTACT"))
+  }
+}

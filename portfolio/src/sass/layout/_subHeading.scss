@@ -1,0 +1,35 @@
+@import "../helpers/placeholders";
+
+%subHeading {
+  @keyframes showSubHeading {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  .sub-heading {
+    margin-top: 0;
+    margin-left: 15px;
+    padding: 2px;
+    font-size: 1.5em;
+    color: $text-grey;
+    text-shadow: 1px 1px 4px $white;
+    animation-name: showSubHeading;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    @media only screen and (min-width: 300px) {
+      margin-left: 20px;
+    }
+    @media only screen and (min-width: 400px) {
+      font-size: 2em;
+    }
+    @media only screen and (min-width: 800px) {
+      font-size: 4em;
+    }
+  }
+}

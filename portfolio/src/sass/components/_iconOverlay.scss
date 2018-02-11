@@ -1,8 +1,7 @@
-@import "../helpers/placeholders";
-
+@import "../helpers/mixins";
 
 /* Menu Links */
-%icon-overlay {
+@mixin iconOverlay($counter, $menuItems) {
   @each $item in $menuItems {
     a:nth-child(#{$counter}) {
 
@@ -15,7 +14,7 @@
         height: 100%;
         background-color: $background-nav;
         opacity: 0;
-        transition: opacity 0.5s;
+        @include transitionRequired(opacity, 0.5s);
       }
 
       i:hover:before {
@@ -25,12 +24,10 @@
       i:after {
         position: absolute;
         content: $item;
-        opacity: 0;
-        transition: opacity 0.5s;
         font-size: 8px;
-
-        /* Centered */
-        @extend %centering;
+        opacity: 0;
+        @include transitionRequired(opacity, 0.5s);
+        @extend %centering; // Centering
       }
 
       i:hover:after {
@@ -41,3 +38,4 @@
     $counter: $counter + 1;
   }
 }
+

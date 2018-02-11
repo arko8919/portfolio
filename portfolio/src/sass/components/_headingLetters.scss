@@ -1,7 +1,9 @@
 @import "../helpers/mixins";
 
 /* Header Letters */
-@mixin headerLetters($items, $inc) {
+@mixin headingLetters($items, $inc) {
+  // Starting position - left side
+  $left: 0px;
   // Styling for each header letters
   @for $i from 1 through $items {
     span:nth-child(#{$i}) {

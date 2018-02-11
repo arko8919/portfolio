@@ -4,6 +4,7 @@ export const Skills = () => {
     return (
         <div id="skills">
             <h2>Skills</h2>
+            <hr/>
             <div className="container">
                 <div className="content">
                     <i className="devicon-html5-plain colored"> </i>

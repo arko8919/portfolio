@@ -1,6 +1,6 @@
-@import "headerLetters";
+@import "../components/headingLetters";
 
-%header {
+%heading {
   /* Header Animation */
   @keyframes move {
     from {
@@ -41,7 +41,7 @@
   p:nth-child(1) {
     min-width: 80px;
     margin: 0 0 0 15px;
-    @include headerLetters(3, 27); // $items --> styling header letters, $inc --> inc. distance between letters
+    @include headingLetters(3, 27); // $items --> styling header letters, $inc --> inc. distance between letters
 
     @media only screen and (min-width: 300px) {
       display: block;
@@ -50,19 +50,19 @@
     }
     @media only screen and (min-width: 400px) {
       min-width: 135px;
-      @include headerLetters(3, 42); // $items --> styling header letters, $inc --> inc. distance between letters
+      @include headingLetters(3, 42); // $items --> styling header letters, $inc --> inc. distance between letters
     }
     @media only screen and (min-width: 800px) {
       display: inline-block;
       min-width: 200px;
-      @include headerLetters(3, 62); // $items --> styling header letters, $inc --> inc. distance between letters
+      @include headingLetters(3, 62); // $items --> styling header letters, $inc --> inc. distance between letters
     }
   }
 
   p:nth-child(2) {
     min-width: 80px;
     margin: 0;
-    @include headerLetters(3, 20); // $items --> styling header letters, $inc --> inc. distance between letters
+    @include headingLetters(3, 20); // $items --> styling header letters, $inc --> inc. distance between letters
 
     @media only screen and (min-width: 300px) {
       min-width: 90px;
@@ -70,31 +70,31 @@
     }
     @media only screen and (min-width: 400px) {
       min-width: 135px;
-      @include headerLetters(3, 32); // $items --> styling header letters, $inc --> inc. distance between letters
+      @include headingLetters(3, 32); // $items --> styling header letters, $inc --> inc. distance between letters
     }
     @media only screen and (min-width: 800px) {
       min-width: 200px;
       margin: 0;
-      @include headerLetters(3, 47); // $items --> styling header letters, $inc --> inc. distance between letters
+      @include headingLetters(3, 47); // $items --> styling header letters, $inc --> inc. distance between letters
     }
   }
 
   p:nth-child(3) {
     min-width: 150px;
     margin: 0 0 0 15px;
-    @include headerLetters(5, 27); // $items --> styling header letters, $inc --> inc. distance between letters
+    @include headingLetters(5, 27); // $items --> styling header letters, $inc --> inc. distance between letters
 
     @media only screen and (min-width: 300px) {
       margin: 0;
     }
     @media only screen and (min-width: 400px) {
       min-width: 220px;
-      @include headerLetters(5, 40); // $items --> styling header letters, $inc --> inc. distance between letters
+      @include headingLetters(5, 40); // $items --> styling header letters, $inc --> inc. distance between letters
     }
     @media only screen and (min-width: 800px) {
       min-width: 340px;
       margin: 0 0 0 20px;
-      @include headerLetters(5, 65); // $items --> styling header letters, $inc --> inc. distance between letters
+      @include headingLetters(5, 65); // $items --> styling header letters, $inc --> inc. distance between letters
     }
   }
 }

@@ -1,32 +1,23 @@
-@import "../helpers/placeholders";
 @import "../components/imageOverlay";
+@import "../components/underLine";
 
 %myWork {
   #myWork {
     padding: 40px 0 60px 0;
     background-color: $background-even;
     font-size: $standard-size;
-    h2 {
-      text-align: center;
-      margin-bottom: 60px;
-      color: $text;
-      font-size: 2em;
-      @media only screen and (min-width: 400px) {
-        font-size: 3em;
-      }
-      @media only screen and (min-width: 800px) {
-        font-size: 3.5em;
-      }
-    }
+
+    @extend %h2;
+    @extend %under-line; // underline under heading level 2
 
     .container {
       display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
+      @include flex-flow(column, nowrap);
+      @include justify-content(center);
+      @include align-items(center);
       cursor: pointer;
       @media only screen and (min-width: 700px) {
-        flex-flow: row wrap;
+        @include flex-flow(row, wrap);
       }
       .content {
         position: relative;

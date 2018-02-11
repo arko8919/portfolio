@@ -5,7 +5,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
+// 3D text - thick version
 %text-3d-thick {
   text-shadow: 0 1px 0 #ccc,
   0 2px 0 #c9c9c9,
@@ -20,7 +20,7 @@
   0 10px 10px rgba(0, 0, 0, .2),
   0 20px 20px rgba(0, 0, 0, .15);
 }
-
+// 3D text - thin version
 %text-3d-thin {
   text-shadow: 1px 1px 0 #CCC,
   2px 2px 0 #CCC,
@@ -41,5 +41,20 @@
     4px 4px 0 #444,
     5px 5px 0 #444,
     6px 6px 0 #444;
+  }
+}
+
+%h2 {
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    color: $text;
+    margin-bottom: 10px;
+    @media only screen and (min-width: 400px) {
+      font-size: 3em;
+    }
+    @media only screen and (min-width: 400px) {
+      font-size: 3.5em;
+    }
   }
 }

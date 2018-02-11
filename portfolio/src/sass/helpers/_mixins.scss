@@ -37,6 +37,14 @@
   transition: $property $time $timing;
 }
 
+@mixin transitionRequired($property, $time) {
+  -webkit-transition: $property $time;
+  -moz-transition: $property $time;
+  -o-transition: $property $time;
+  transition: $property $time;
+
+}
+
 @mixin transform($value) {
   -webkit-transform: ($value);
   -moz-transform: ($value);

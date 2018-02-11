@@ -32,6 +32,7 @@ export class Contact extends React.Component {
         return (
             <div id="contact">
                 <h2>Contact</h2>
+                <hr/>
                 <p>Have a question or want hire me?</p>
                 <div className="msgForm">
                     <PostForm alertMsg={this.alertMsg}/>

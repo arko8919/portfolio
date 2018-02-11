@@ -3,6 +3,7 @@ export const MyWork = () => {
     return (
         <div id="myWork">
             <h2>My Work</h2>
+            <hr/>
             <div className="container">
                 <div className="content">
                     <img src={require("./homers-on-the-job.jpg")}/>

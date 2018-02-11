@@ -3,9 +3,6 @@
 /* even */
 /* Fonts */
 /* Fonts-size */
-/* MENU */
-/* icon-overlay */
-/* Header Animation */
 body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
   left: 50%;
   top: 50%;
@@ -20,200 +17,294 @@ body .container #home .heading p span {
     body .container #home .heading p span {
       text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
 
-/* Menu Links */
-body .container .nav-container nav a:nth-child(1) i:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #1B242F;
-  opacity: 0;
-  transition: opacity 0.5s; }
-body .container .nav-container nav a:nth-child(1) i:hover:before {
-  opacity: 1; }
-body .container .nav-container nav a:nth-child(1) i:after {
-  position: absolute;
-  content: "HOME";
-  opacity: 0;
-  transition: opacity 0.5s;
-  font-size: 8px;
-  /* Centered */ }
-body .container .nav-container nav a:nth-child(1) i:hover:after {
-  opacity: 1;
-  color: #08FDD8; }
-body .container .nav-container nav a:nth-child(2) i:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #1B242F;
-  opacity: 0;
-  transition: opacity 0.5s; }
-body .container .nav-container nav a:nth-child(2) i:hover:before {
-  opacity: 1; }
-body .container .nav-container nav a:nth-child(2) i:after {
-  position: absolute;
-  content: "ABOUT";
-  opacity: 0;
-  transition: opacity 0.5s;
-  font-size: 8px;
-  /* Centered */ }
-body .container .nav-container nav a:nth-child(2) i:hover:after {
-  opacity: 1;
-  color: #08FDD8; }
-body .container .nav-container nav a:nth-child(3) i:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #1B242F;
-  opacity: 0;
-  transition: opacity 0.5s; }
-body .container .nav-container nav a:nth-child(3) i:hover:before {
-  opacity: 1; }
-body .container .nav-container nav a:nth-child(3) i:after {
-  position: absolute;
-  content: "SKILLS";
-  opacity: 0;
-  transition: opacity 0.5s;
-  font-size: 8px;
-  /* Centered */ }
-body .container .nav-container nav a:nth-child(3) i:hover:after {
-  opacity: 1;
-  color: #08FDD8; }
-body .container .nav-container nav a:nth-child(4) i:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #1B242F;
-  opacity: 0;
-  transition: opacity 0.5s; }
-body .container .nav-container nav a:nth-child(4) i:hover:before {
-  opacity: 1; }
-body .container .nav-container nav a:nth-child(4) i:after {
-  position: absolute;
-  content: "MY WORK";
-  opacity: 0;
-  transition: opacity 0.5s;
-  font-size: 8px;
-  /* Centered */ }
-body .container .nav-container nav a:nth-child(4) i:hover:after {
-  opacity: 1;
-  color: #08FDD8; }
-body .container .nav-container nav a:nth-child(5) i:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #1B242F;
-  opacity: 0;
-  transition: opacity 0.5s; }
-body .container .nav-container nav a:nth-child(5) i:hover:before {
-  opacity: 1; }
-body .container .nav-container nav a:nth-child(5) i:after {
-  position: absolute;
-  content: "CONTACT";
-  opacity: 0;
-  transition: opacity 0.5s;
-  font-size: 8px;
-  /* Centered */ }
-body .container .nav-container nav a:nth-child(5) i:hover:after {
-  opacity: 1;
-  color: #08FDD8; }
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
 
-body .container .nav-container {
-  /* TOP MENU - on small screen */
-  /* BOTTOM MENU */
-  /* Add class to nav which hide and show menu */ }
-  body .container .nav-container .menu {
-    width: 100%;
-    height: 40px;
+body .container .nav-container .menu {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  -webkit-flex-flow: row-reverse nowrap;
+  flex-flow: row-reverse nowrap;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 3px 10px 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1B242F;
+  z-index: 1000; }
+  @media only screen and (min-width: 400px) {
+    body .container .nav-container .menu {
+      display: none; } }
+  body .container .nav-container .menu .material-icons.md {
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer; }
+    body .container .nav-container .menu .material-icons.md:hover {
+      color: #08FDD8; }
+
+/* Colors */
+/* odd */
+/* even */
+/* Fonts */
+/* Fonts-size */
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
+
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
+
+/* Menu Links */
+body .container .nav-container nav {
+  width: 100%;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  background-color: #1B242F;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  -moz-transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  -o-transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  align-items: center; }
+  @media only screen and (min-width: 400px) {
+    body .container .nav-container nav {
+      top: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-justify-content: center;
+      justify-content: center; } }
+  @media only screen and (min-width: 800px) {
+    body .container .nav-container nav {
+      width: 80px;
+      height: 100%;
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap; } }
+  body .container .nav-container nav a {
+    position: relative;
+    padding: 10px 0;
+    text-decoration: none;
     display: flex;
-    flex-flow: row-reverse nowrap;
-    align-items: center;
-    padding: 3px 10px 0 10px;
-    position: fixed;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    body .container .nav-container nav a .material-icons.md {
+      color: #616161; }
+      body .container .nav-container nav a .material-icons.md:hover {
+        color: #E74C3C; }
+    @media only screen and (min-width: 400px) {
+      body .container .nav-container nav a {
+        padding: 10px 20px; } }
+  body .container .nav-container nav a:nth-child(1) i:before {
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
-    background-color: #1B242F;
-    z-index: 1000; }
-    @media only screen and (min-width: 400px) {
-      body .container .nav-container .menu {
-        display: none; } }
-    body .container .nav-container .menu .material-icons.md {
-      font-size: 36px;
-      color: #fff;
-      cursor: pointer; }
-      body .container .nav-container .menu .material-icons.md:hover {
-        color: #08FDD8; }
-  body .container .nav-container nav {
     width: 100%;
-    position: fixed;
-    top: 40px;
-    left: 0;
-    transform: translate3d(-100%, 0, 0);
-    transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
-    z-index: 1000;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
+    height: 100%;
     background-color: #1B242F;
-    /* Medium screen */
-    /* Large screen */
-    /* Menu icons Overlay on all screens */ }
-    @media only screen and (min-width: 400px) {
-      body .container .nav-container nav {
-        transform: translate3d(0, 0, 0);
-        top: 0;
-        justify-content: center; } }
-    @media only screen and (min-width: 800px) {
-      body .container .nav-container nav {
-        flex-flow: column wrap;
-        width: 80px;
-        height: 100%; } }
-    body .container .nav-container nav a {
-      position: relative;
-      padding: 10px 0;
-      text-decoration: none;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      body .container .nav-container nav a .material-icons.md {
-        color: #616161; }
-        body .container .nav-container nav a .material-icons.md:hover {
-          color: #E74C3C; }
-      @media only screen and (min-width: 400px) {
-        body .container .nav-container nav a {
-          padding: 10px 20px; } }
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  body .container .nav-container nav a:nth-child(1) i:hover:before {
+    opacity: 1; }
+  body .container .nav-container nav a:nth-child(1) i:after {
+    position: absolute;
+    content: "HOME";
+    font-size: 8px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  body .container .nav-container nav a:nth-child(1) i:hover:after {
+    opacity: 1;
+    color: #08FDD8; }
+  body .container .nav-container nav a:nth-child(2) i:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1B242F;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  body .container .nav-container nav a:nth-child(2) i:hover:before {
+    opacity: 1; }
+  body .container .nav-container nav a:nth-child(2) i:after {
+    position: absolute;
+    content: "ABOUT";
+    font-size: 8px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  body .container .nav-container nav a:nth-child(2) i:hover:after {
+    opacity: 1;
+    color: #08FDD8; }
+  body .container .nav-container nav a:nth-child(3) i:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1B242F;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  body .container .nav-container nav a:nth-child(3) i:hover:before {
+    opacity: 1; }
+  body .container .nav-container nav a:nth-child(3) i:after {
+    position: absolute;
+    content: "SKILLS";
+    font-size: 8px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  body .container .nav-container nav a:nth-child(3) i:hover:after {
+    opacity: 1;
+    color: #08FDD8; }
+  body .container .nav-container nav a:nth-child(4) i:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1B242F;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  body .container .nav-container nav a:nth-child(4) i:hover:before {
+    opacity: 1; }
+  body .container .nav-container nav a:nth-child(4) i:after {
+    position: absolute;
+    content: "MY WORK";
+    font-size: 8px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  body .container .nav-container nav a:nth-child(4) i:hover:after {
+    opacity: 1;
+    color: #08FDD8; }
+  body .container .nav-container nav a:nth-child(5) i:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1B242F;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  body .container .nav-container nav a:nth-child(5) i:hover:before {
+    opacity: 1; }
+  body .container .nav-container nav a:nth-child(5) i:after {
+    position: absolute;
+    content: "CONTACT";
+    font-size: 8px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  body .container .nav-container nav a:nth-child(5) i:hover:after {
+    opacity: 1;
+    color: #08FDD8; }
+
+body .container .nav-container {
+  /* Menu All on Screens - slide, top, side */
+  /* Classes added by JS ( event click on menu bar ) to nav which hide and show menu */ }
   body .container .nav-container .hide {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0); }
     @media only screen and (min-width: 400px) {
       body .container .nav-container .hide {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0); } }
   body .container .nav-container .show {
-    transform: translate3d(0, 0, 0);
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
 
 /* Colors */
 /* odd */
 /* even */
 /* Fonts */
 /* Fonts-size */
-/* MENU */
-/* icon-overlay */
-/* Header Animation */
 body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
   left: 50%;
   top: 50%;
@@ -228,14 +319,23 @@ body .container #home .heading p span {
     body .container #home .heading p span {
       text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
 
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
+
 /* Colors */
 /* odd */
 /* even */
 /* Fonts */
 /* Fonts-size */
-/* MENU */
-/* icon-overlay */
-/* Header Animation */
 body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
   left: 50%;
   top: 50%;
@@ -249,6 +349,18 @@ body .container #home .heading p span {
   @media only screen and (min-width: 800px) {
     body .container #home .heading p span {
       text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
+
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
 
 /* Header Letters */
 body .container #home .heading {
@@ -971,6 +1083,137 @@ body .container #home .heading {
             -ms-transform: scale(1.2);
             transform: scale(1.2); } }
 
+/* Colors */
+/* odd */
+/* even */
+/* Fonts */
+/* Fonts-size */
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
+
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
+
+@keyframes showSubHeading {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+body .container #home .sub-heading {
+  margin-top: 0;
+  margin-left: 15px;
+  padding: 2px;
+  font-size: 1.5em;
+  color: #616161;
+  text-shadow: 1px 1px 4px #fff;
+  animation-name: showSubHeading;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0; }
+  @media only screen and (min-width: 300px) {
+    body .container #home .sub-heading {
+      margin-left: 20px; } }
+  @media only screen and (min-width: 400px) {
+    body .container #home .sub-heading {
+      font-size: 2em; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .sub-heading {
+      font-size: 4em; } }
+
+/* Colors */
+/* odd */
+/* even */
+/* Fonts */
+/* Fonts-size */
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
+
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
+
+body .container #home .heading-button {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+  margin-left: 15px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  background-color: #E74C3C;
+  box-shadow: 0 0 15px #252627;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: color 0.5s, background-color 1.5s, text-shadow 0.5s; }
+  @media only screen and (min-width: 300px) {
+    body .container #home .heading-button {
+      margin-left: 20px; } }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading-button {
+      padding: 10px 15px;
+      font-size: 1.2em; } }
+  body .container #home .heading-button i {
+    padding-left: 5px;
+    transition: all 0.5s; }
+  body .container #home .heading-button:hover {
+    color: black;
+    background-color: #fff;
+    text-shadow: 0 0 2px red; }
+  body .container #home .heading-button:hover i {
+    transform: rotate(90deg) translate(-2px, 0);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform: translate(-2px 0);
+    -moz-transform: translate(-2px 0);
+    -o-transform: translate(-2px 0);
+    -ms-transform: translate(-2px 0);
+    transform: translate(-2px 0); }
+
 body .container #home {
   padding: 100px 0 40px 0;
   display: flex;
@@ -1005,72 +1248,12 @@ body .container #home {
       body .container #home .heading {
         text-align: center;
         font-size: 8em; } }
-@keyframes showSubHeading {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-  body .container #home .subHeading {
-    margin-top: 0;
-    margin-left: 15px;
-    padding: 2px;
-    font-size: 1.5em;
-    color: #616161;
-    text-shadow: 1px 1px 4px #fff;
-    animation-name: showSubHeading;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    opacity: 0; }
-    @media only screen and (min-width: 300px) {
-      body .container #home .subHeading {
-        margin-left: 20px; } }
-    @media only screen and (min-width: 400px) {
-      body .container #home .subHeading {
-        font-size: 2em; } }
-    @media only screen and (min-width: 800px) {
-      body .container #home .subHeading {
-        font-size: 4em; } }
-  body .container #home a {
-    font-family: "Roboto Mono", monospace;
-    font-size: 1em;
-    margin-left: 15px;
-    text-decoration: none;
-    border: 1px solid #fff;
-    padding: 5px 10px;
-    background-color: #E74C3C;
-    box-shadow: 0 0 15px #252627;
-    border-radius: 5px;
-    color: black;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    transition: color 0.5s, background-color 1.5s, text-shadow 0.5s; }
-    @media only screen and (min-width: 300px) {
-      body .container #home a {
-        margin-left: 20px; } }
-    @media only screen and (min-width: 400px) {
-      body .container #home a {
-        padding: 10px 15px;
-        font-size: 1.2em; } }
-    body .container #home a i {
-      padding-left: 5px;
-      transition: all 0.5s; }
-    body .container #home a:hover {
-      color: black;
-      background-color: #fff;
-      text-shadow: 0 0 2px red; }
-    body .container #home a:hover i {
-      transform: rotate(90deg) translate(-2px, 0); }
 
 /* Colors */
 /* odd */
 /* even */
 /* Fonts */
 /* Fonts-size */
-/* MENU */
-/* icon-overlay */
-/* Header Animation */
 body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
   left: 50%;
   top: 50%;
@@ -1085,22 +1268,52 @@ body .container #home .heading p span {
     body .container #home .heading p span {
       text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
 
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
+
+@keyframes hrMoving {
+  from {
+    left: -300%; }
+  to {
+    left: 0; } }
+@keyframes hrInfinite {
+  0% {
+    left: -300%; }
+  5% {
+    left: 0; }
+  100% {
+    left: 0; } }
+body .container #about hr, body .container #skills hr, body .container #myWork hr, body .container #contact hr {
+  position: relative;
+  border: none;
+  outline: none;
+  height: 5px;
+  background-color: #444649;
+  width: 10%;
+  margin-bottom: 40px;
+  animation-name: hrMoving, hrInfinite;
+  animation-duration: 1s, 8s;
+  animation-delay: 0s, 5s;
+  animation-iteration-count: 1, infinite; }
+
 body .container #about {
   display: flex;
+  -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-align-items: center;
   align-items: center;
   padding: 40px 20px;
   font-size: 14px;
   background-color: #F5F5F5; }
-  body .container #about h2 {
-    color: #444649;
-    font-size: 2em; }
-    @media only screen and (min-width: 400px) {
-      body .container #about h2 {
-        font-size: 3em; } }
-    @media only screen and (min-width: 800px) {
-      body .container #about h2 {
-        font-size: 3.5em; } }
   body .container #about p {
     font-size: 1.2em; }
     body .container #about p span {
@@ -1118,9 +1331,6 @@ body .container #about {
 /* even */
 /* Fonts */
 /* Fonts-size */
-/* MENU */
-/* icon-overlay */
-/* Header Animation */
 body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
   left: 50%;
   top: 50%;
@@ -1135,33 +1345,64 @@ body .container #home .heading p span {
     body .container #home .heading p span {
       text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
 
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
+
+@keyframes hrMoving {
+  from {
+    left: -300%; }
+  to {
+    left: 0; } }
+@keyframes hrInfinite {
+  0% {
+    left: -300%; }
+  5% {
+    left: 0; }
+  100% {
+    left: 0; } }
+body .container #about hr, body .container #skills hr, body .container #myWork hr, body .container #contact hr {
+  position: relative;
+  border: none;
+  outline: none;
+  height: 5px;
+  background-color: #444649;
+  width: 10%;
+  margin-bottom: 40px;
+  animation-name: hrMoving, hrInfinite;
+  animation-duration: 1s, 8s;
+  animation-delay: 0s, 5s;
+  animation-iteration-count: 1, infinite; }
+
 body .container #skills {
   padding: 40px 0 60px 0;
   background: #fff;
   font-size: 14px; }
-  body .container #skills h2 {
-    font-size: 2em;
-    text-align: center;
-    color: #444649;
-    margin-bottom: 60px; }
-    @media only screen and (min-width: 400px) {
-      body .container #skills h2 {
-        font-size: 3em; } }
-    @media only screen and (min-width: 400px) {
-      body .container #skills h2 {
-        font-size: 3.5em; } }
   body .container #skills .container {
     display: flex;
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-justify-content: space-evenly;
     justify-content: space-evenly;
+    -webkit-align-items: center;
     align-items: center; }
     body .container #skills .container .content {
       display: flex;
+      -webkit-flex-flow: column nowrap;
       flex-flow: column nowrap;
+      -webkit-justify-content: center;
       justify-content: center;
+      -webkit-align-items: center;
       align-items: center;
-      margin: 15px;
-      align-self: center; }
+      margin: 15px; }
       body .container #skills .container .content i {
         font-size: 36px;
         margin-bottom: 10px; }
@@ -1184,9 +1425,6 @@ body .container #skills {
 /* even */
 /* Fonts */
 /* Fonts-size */
-/* MENU */
-/* icon-overlay */
-/* Header Animation */
 body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
   left: 50%;
   top: 50%;
@@ -1201,32 +1439,25 @@ body .container #home .heading p span {
     body .container #home .heading p span {
       text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
 
-/* Colors */
-/* odd */
-/* even */
-/* Fonts */
-/* Fonts-size */
-/* MENU */
-/* icon-overlay */
-/* Header Animation */
-body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); }
-
-body .container #home .heading p span {
-  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
   @media only screen and (min-width: 400px) {
-    body .container #home .heading p span {
-      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
-  @media only screen and (min-width: 800px) {
-    body .container #home .heading p span {
-      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
 
 body .container #myWork .container .content .overlayTop {
   display: flex;
+  -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
   align-items: center;
   position: absolute;
   bottom: 100%;
@@ -1236,7 +1467,10 @@ body .container #myWork .container .content .overlayTop {
   height: 0;
   background-color: #F5F5F5;
   opacity: 0;
-  transition: all .5s; }
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
   body .container #myWork .container .content .overlayTop h3 {
     margin: 10px 0;
     font-size: 1.5em; }
@@ -1257,7 +1491,9 @@ body .container #myWork .container .content .overlayTop {
         font-size: 1.5em; } }
 body .container #myWork .container .content .overlayBottom {
   display: flex;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
   align-items: center;
   position: absolute;
   top: 100%;
@@ -1267,7 +1503,10 @@ body .container #myWork .container .content .overlayBottom {
   height: 0;
   background-color: #F5F5F5;
   opacity: 0;
-  transition: all .5s; }
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
   body .container #myWork .container .content .overlayBottom a {
     text-decoration: none;
     border: 1px solid #E74C3C;
@@ -1276,7 +1515,10 @@ body .container #myWork .container .content .overlayBottom {
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 5px;
-    transition: all .5s; }
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
     @media only screen and (min-width: 300px) {
       body .container #myWork .container .content .overlayBottom a {
         padding: 10px 20px; } }
@@ -1290,29 +1532,78 @@ body .container #myWork .container .content .overlayBottom {
       background-color: #E74C3C;
       color: #fff; }
 
+/* Colors */
+/* odd */
+/* even */
+/* Fonts */
+/* Fonts-size */
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
+
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
+
+@keyframes hrMoving {
+  from {
+    left: -300%; }
+  to {
+    left: 0; } }
+@keyframes hrInfinite {
+  0% {
+    left: -300%; }
+  5% {
+    left: 0; }
+  100% {
+    left: 0; } }
+body .container #about hr, body .container #skills hr, body .container #myWork hr, body .container #contact hr {
+  position: relative;
+  border: none;
+  outline: none;
+  height: 5px;
+  background-color: #444649;
+  width: 10%;
+  margin-bottom: 40px;
+  animation-name: hrMoving, hrInfinite;
+  animation-duration: 1s, 8s;
+  animation-delay: 0s, 5s;
+  animation-iteration-count: 1, infinite; }
+
 body .container #myWork {
   padding: 40px 0 60px 0;
   background-color: #F5F5F5;
   font-size: 14px; }
-  body .container #myWork h2 {
-    text-align: center;
-    margin-bottom: 60px;
-    color: #444649;
-    font-size: 2em; }
-    @media only screen and (min-width: 400px) {
-      body .container #myWork h2 {
-        font-size: 3em; } }
-    @media only screen and (min-width: 800px) {
-      body .container #myWork h2 {
-        font-size: 3.5em; } }
   body .container #myWork .container {
     display: flex;
+    -webkit-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
     align-items: center;
     cursor: pointer; }
     @media only screen and (min-width: 700px) {
       body .container #myWork .container {
+        -webkit-flex-flow: row wrap;
         flex-flow: row wrap; } }
     body .container #myWork .container .content {
       position: relative;
@@ -1344,9 +1635,6 @@ body .container #myWork {
 /* even */
 /* Fonts */
 /* Fonts-size */
-/* MENU */
-/* icon-overlay */
-/* Header Animation */
 body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
   left: 50%;
   top: 50%;
@@ -1361,24 +1649,146 @@ body .container #home .heading p span {
     body .container #home .heading p span {
       text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
 
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
+
+body .container #contact .msgForm {
+  position: relative;
+  width: 100%; }
+  @media only screen and (min-width: 500px) {
+    body .container #contact .msgForm {
+      width: 80%; } }
+  @media only screen and (min-width: 800px) {
+    body .container #contact .msgForm {
+      width: 60%; } }
+  body .container #contact .msgForm form {
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap; }
+    body .container #contact .msgForm form input, body .container #contact .msgForm form textarea {
+      margin-bottom: 5px;
+      resize: vertical;
+      padding: 5px 5px;
+      background-color: #F5F5F5;
+      box-shadow: 1px 1px 2px black; }
+    body .container #contact .msgForm form textarea {
+      height: 80px; }
+      @media only screen and (min-width: 400px) {
+        body .container #contact .msgForm form textarea {
+          height: 100px; } }
+    body .container #contact .msgForm form input[type="submit"] {
+      cursor: pointer;
+      border: 1px solid #444649;
+      font-weight: bold;
+      outline: none;
+      width: 100%;
+      background-color: #E74C3C;
+      color: #fff;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      @media only screen and (min-width: 800px) {
+        body .container #contact .msgForm form input[type="submit"] {
+          width: 120px; } }
+      body .container #contact .msgForm form input[type="submit"]:hover {
+        background-color: #F5F5F5;
+        color: #E74C3C; }
+  body .container #contact .msgForm .popupWindow {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105%;
+    height: 105%;
+    margin: -10px 0 0 -15px;
+    border-radius: 10px;
+    padding: 0;
+    background-color: rgba(27, 36, 47, 0.8); }
+    body .container #contact .msgForm .popupWindow span {
+      position: absolute;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 1px 1px 10px red; }
+
+/* Colors */
+/* odd */
+/* even */
+/* Fonts */
+/* Fonts-size */
+body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+body .container #home .heading p span {
+  text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444; }
+  @media only screen and (min-width: 400px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444; } }
+  @media only screen and (min-width: 800px) {
+    body .container #home .heading p span {
+      text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
+
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
+
+@keyframes hrMoving {
+  from {
+    left: -300%; }
+  to {
+    left: 0; } }
+@keyframes hrInfinite {
+  0% {
+    left: -300%; }
+  5% {
+    left: 0; }
+  100% {
+    left: 0; } }
+body .container #about hr, body .container #skills hr, body .container #myWork hr, body .container #contact hr {
+  position: relative;
+  border: none;
+  outline: none;
+  height: 5px;
+  background-color: #444649;
+  width: 10%;
+  margin-bottom: 40px;
+  animation-name: hrMoving, hrInfinite;
+  animation-duration: 1s, 8s;
+  animation-delay: 0s, 5s;
+  animation-iteration-count: 1, infinite; }
+
 body .container #contact {
   padding: 40px 10px;
   font-size: 14px;
   display: flex;
+  -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-align-items: center;
   align-items: center;
   min-height: 100vh; }
   @media only screen and (min-width: 400px) {
     body .container #contact {
       padding: 40px 20px; } }
-  body .container #contact h2 {
-    color: #444649; }
-    @media only screen and (min-width: 400px) {
-      body .container #contact h2 {
-        font-size: 3em; } }
-    @media only screen and (min-width: 800px) {
-      body .container #contact h2 {
-        font-size: 3.5em; } }
   body .container #contact p {
     color: #444649;
     font-size: 1em; }
@@ -1388,70 +1798,12 @@ body .container #contact {
     @media only screen and (min-width: 800px) {
       body .container #contact p {
         font-size: 1.5em; } }
-  body .container #contact .msgForm {
-    position: relative;
-    width: 100%; }
-    @media only screen and (min-width: 500px) {
-      body .container #contact .msgForm {
-        width: 80%; } }
-    @media only screen and (min-width: 800px) {
-      body .container #contact .msgForm {
-        width: 60%; } }
-    body .container #contact .msgForm form {
-      display: flex;
-      flex-flow: column nowrap; }
-      body .container #contact .msgForm form input, body .container #contact .msgForm form textarea {
-        margin-bottom: 5px;
-        resize: vertical;
-        padding: 5px 5px;
-        background-color: #F5F5F5;
-        box-shadow: 1px 1px 2px black; }
-      body .container #contact .msgForm form textarea {
-        height: 80px; }
-        @media only screen and (min-width: 400px) {
-          body .container #contact .msgForm form textarea {
-            height: 100px; } }
-      body .container #contact .msgForm form input[type="submit"] {
-        cursor: pointer;
-        border: 1px solid #444649;
-        font-weight: bold;
-        outline: none;
-        width: 100%;
-        background-color: #E74C3C;
-        color: #fff;
-        transition: all 0.5s; }
-        @media only screen and (min-width: 800px) {
-          body .container #contact .msgForm form input[type="submit"] {
-            width: 120px; } }
-        body .container #contact .msgForm form input[type="submit"]:hover {
-          background-color: #F5F5F5;
-          color: #E74C3C; }
-    body .container #contact .msgForm .popupWindow {
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 105%;
-      height: 105%;
-      margin: -10px 0 0 -15px;
-      border-radius: 10px;
-      padding: 0;
-      background-color: rgba(27, 36, 47, 0.8); }
-      body .container #contact .msgForm .popupWindow span {
-        position: absolute;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-shadow: 1px 1px 10px red; }
 
 /* Colors */
 /* odd */
 /* even */
 /* Fonts */
 /* Fonts-size */
-/* MENU */
-/* icon-overlay */
-/* Header Animation */
 body .container .nav-container nav a:nth-child(1) i:after, body .container .nav-container nav a:nth-child(2) i:after, body .container .nav-container nav a:nth-child(3) i:after, body .container .nav-container nav a:nth-child(4) i:after, body .container .nav-container nav a:nth-child(5) i:after, body .container #contact .msgForm .popupWindow span {
   left: 50%;
   top: 50%;
@@ -1466,18 +1818,69 @@ body .container #home .heading p span {
     body .container #home .heading p span {
       text-shadow: 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444; } }
 
+body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #444649;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3em; } }
+  @media only screen and (min-width: 400px) {
+    body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
+      font-size: 3.5em; } }
+
 body .container footer {
   display: flex;
+  -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-align-items: center;
+  align-items: center;
   height: 300px;
-  background-color: #E74C3C; }
+  background-color: #E74C3C;
+  font-size: 14px; }
   body .container footer .icons {
     margin-top: 50px;
     display: flex;
+    color: #fff;
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    justify-content: space-evenly; }
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
     body .container footer .icons a {
-      font-size: 64px; }
+      color: #1B242F;
+      cursor: pointer;
+      font-size: 64px;
+      margin: 0 5px;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      @media only screen and (min-width: 400px) {
+        body .container footer .icons a {
+          font-size: 72px; } }
+      @media only screen and (min-width: 800px) {
+        body .container footer .icons a {
+          font-size: 100px;
+          margin-left: 20px; } }
+      body .container footer .icons a:hover {
+        color: #08FDD8; }
+  body .container footer p {
+    margin-top: 40px;
+    font-size: 1.3em;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Roboto Mono", monospace; }
+    @media only screen and (min-width: 400px) {
+      body .container footer p {
+        font-size: 1.5em; } }
+    @media only screen and (min-width: 800px) {
+      body .container footer p {
+        font-size: 1.7em; } }
+    body .container footer p span {
+      color: black; }
 
 body {
   font-family: "Open Sans", sans-serif;

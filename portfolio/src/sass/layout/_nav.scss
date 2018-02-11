@@ -1,0 +1,26 @@
+@import "../components/menuOnSmallScreens";
+@import "../components/_menuOnAllScreens";
+
+%nav {
+
+  .nav-container {
+    // Menu on small screens
+    @extend %menu-on-small-screens;
+
+    /* Menu All on Screens - slide, top, side */
+    @extend %menu-on-all-screens;
+
+    /* Classes added by JS ( event click on menu bar ) to nav which hide and show menu */
+    .hide {
+      @include transform(translate3d(-100%, 0, 0));
+
+      @media only screen and (min-width: 400px) {
+        @include transform(translate3d(0, 0, 0));
+      }
+    }
+    .show {
+      overflow: hidden;
+      @include transform(translate3d(0, 0, 0));
+    }
+  }
+}
