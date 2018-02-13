@@ -2,7 +2,7 @@
 %about {
   #about {
     display: flex;
-    @include flex-flow(column, nowrap);
+    @include flex-flow(column nowrap);
     @include align-items(center);
     padding: 40px 20px;
     font-size: $standard-size;
@@ -12,7 +12,10 @@
     @extend %under-line; // underline under heading level 2
 
     p {
+      margin-left: 15%;
+      margin-right: 15%;
       font-size: 1.2em;
+
       span {
         color: $background-home;
         font-weight: bold;

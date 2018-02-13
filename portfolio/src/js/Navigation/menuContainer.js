@@ -16,10 +16,11 @@ export class MenuContainer extends React.Component {
     handleClick() {
         this.setState(
             {
-                visible: this.state.visible === "hide" ? "show" : "hide"
+                visible: this.state.visible === "hide" ? "show" : "hide",
             }
         );
     }
+
 
     render() {
         return (

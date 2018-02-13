@@ -34,7 +34,7 @@
       @include animation-duration(2s);
       @include animation-timing-function(cubic-bezier(.91, .8, .54, 1.39));
       @include animation-delay(0s);
-      @extend %text-3d-thin; // Add 3d effect on header letters
+      @extend %text-3d-thin; // Add 3d effect on heading letters
     }
   }
   // Positioning of all header letters and paragraphs

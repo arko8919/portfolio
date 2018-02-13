@@ -11,13 +11,16 @@
 
     .container {
       display: flex;
-      @include flex-flow(row, wrap);
+      margin-left: 15%;
+      margin-right: 15%;
+      @include flex-flow(row wrap);
       @include justify-content(space-evenly);
       @include align-items(center);
 
+
       .content {
         display: flex;
-        @include flex-flow(column, nowrap);
+        @include flex-flow(column nowrap);
         @include justify-content(center);
         @include align-items(center);
         margin: 15px;

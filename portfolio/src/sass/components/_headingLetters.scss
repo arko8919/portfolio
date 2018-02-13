@@ -10,7 +10,8 @@
       left: $left;
       color: $heading;
       @include animation-delay(0s);
-      @include transition(all, 0.12s, ease-out);
+      @include transition(all .3s ease-out);
+
       &:hover
       {
         cursor: pointer;

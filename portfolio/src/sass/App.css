@@ -31,7 +31,7 @@ body .container #about h2, body .container #skills h2, body .container #myWork h
 
 body .container .nav-container .menu {
   width: 100%;
-  height: 40px;
+  height: 61px;
   display: flex;
   -webkit-flex-flow: row-reverse nowrap;
   flex-flow: row-reverse nowrap;
@@ -88,7 +88,7 @@ body .container #about h2, body .container #skills h2, body .container #myWork h
 body .container .nav-container nav {
   width: 100%;
   position: fixed;
-  top: 40px;
+  top: 60px;
   left: 0;
   z-index: 1000;
   display: flex;
@@ -423,10 +423,10 @@ body .container #home .heading {
       -moz-animation-delay: 0s;
       -o-animation-delay: 0s;
       animation-delay: 0s;
-      -webkit-transition: all 0.12s ease-out;
-      -moz-transition: all 0.12s ease-out;
-      -o-transition: all 0.12s ease-out;
-      transition: all 0.12s ease-out; }
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
       body .container #home .heading p:nth-child(1) span:nth-child(1):hover {
         cursor: pointer;
         color: #08FDD8;
@@ -442,10 +442,10 @@ body .container #home .heading {
       -moz-animation-delay: 0s;
       -o-animation-delay: 0s;
       animation-delay: 0s;
-      -webkit-transition: all 0.12s ease-out;
-      -moz-transition: all 0.12s ease-out;
-      -o-transition: all 0.12s ease-out;
-      transition: all 0.12s ease-out; }
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
       body .container #home .heading p:nth-child(1) span:nth-child(2):hover {
         cursor: pointer;
         color: #08FDD8;
@@ -461,10 +461,10 @@ body .container #home .heading {
       -moz-animation-delay: 0s;
       -o-animation-delay: 0s;
       animation-delay: 0s;
-      -webkit-transition: all 0.12s ease-out;
-      -moz-transition: all 0.12s ease-out;
-      -o-transition: all 0.12s ease-out;
-      transition: all 0.12s ease-out; }
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
       body .container #home .heading p:nth-child(1) span:nth-child(3):hover {
         cursor: pointer;
         color: #08FDD8;
@@ -488,10 +488,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(1) span:nth-child(1):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -507,10 +507,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(1) span:nth-child(2):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -526,10 +526,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(1) span:nth-child(3):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -549,10 +549,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(1) span:nth-child(1):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -568,10 +568,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(1) span:nth-child(2):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -587,10 +587,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(1) span:nth-child(3):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -609,10 +609,10 @@ body .container #home .heading {
       -moz-animation-delay: 0s;
       -o-animation-delay: 0s;
       animation-delay: 0s;
-      -webkit-transition: all 0.12s ease-out;
-      -moz-transition: all 0.12s ease-out;
-      -o-transition: all 0.12s ease-out;
-      transition: all 0.12s ease-out; }
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
       body .container #home .heading p:nth-child(2) span:nth-child(1):hover {
         cursor: pointer;
         color: #08FDD8;
@@ -628,10 +628,10 @@ body .container #home .heading {
       -moz-animation-delay: 0s;
       -o-animation-delay: 0s;
       animation-delay: 0s;
-      -webkit-transition: all 0.12s ease-out;
-      -moz-transition: all 0.12s ease-out;
-      -o-transition: all 0.12s ease-out;
-      transition: all 0.12s ease-out; }
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
       body .container #home .heading p:nth-child(2) span:nth-child(2):hover {
         cursor: pointer;
         color: #08FDD8;
@@ -647,10 +647,10 @@ body .container #home .heading {
       -moz-animation-delay: 0s;
       -o-animation-delay: 0s;
       animation-delay: 0s;
-      -webkit-transition: all 0.12s ease-out;
-      -moz-transition: all 0.12s ease-out;
-      -o-transition: all 0.12s ease-out;
-      transition: all 0.12s ease-out; }
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
       body .container #home .heading p:nth-child(2) span:nth-child(3):hover {
         cursor: pointer;
         color: #08FDD8;
@@ -673,10 +673,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(2) span:nth-child(1):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -692,10 +692,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(2) span:nth-child(2):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -711,10 +711,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(2) span:nth-child(3):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -734,10 +734,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(2) span:nth-child(1):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -753,10 +753,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(2) span:nth-child(2):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -772,10 +772,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(2) span:nth-child(3):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -794,10 +794,10 @@ body .container #home .heading {
       -moz-animation-delay: 0s;
       -o-animation-delay: 0s;
       animation-delay: 0s;
-      -webkit-transition: all 0.12s ease-out;
-      -moz-transition: all 0.12s ease-out;
-      -o-transition: all 0.12s ease-out;
-      transition: all 0.12s ease-out; }
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
       body .container #home .heading p:nth-child(3) span:nth-child(1):hover {
         cursor: pointer;
         color: #08FDD8;
@@ -813,10 +813,10 @@ body .container #home .heading {
       -moz-animation-delay: 0s;
       -o-animation-delay: 0s;
       animation-delay: 0s;
-      -webkit-transition: all 0.12s ease-out;
-      -moz-transition: all 0.12s ease-out;
-      -o-transition: all 0.12s ease-out;
-      transition: all 0.12s ease-out; }
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
       body .container #home .heading p:nth-child(3) span:nth-child(2):hover {
         cursor: pointer;
         color: #08FDD8;
@@ -832,10 +832,10 @@ body .container #home .heading {
       -moz-animation-delay: 0s;
       -o-animation-delay: 0s;
       animation-delay: 0s;
-      -webkit-transition: all 0.12s ease-out;
-      -moz-transition: all 0.12s ease-out;
-      -o-transition: all 0.12s ease-out;
-      transition: all 0.12s ease-out; }
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
       body .container #home .heading p:nth-child(3) span:nth-child(3):hover {
         cursor: pointer;
         color: #08FDD8;
@@ -851,10 +851,10 @@ body .container #home .heading {
       -moz-animation-delay: 0s;
       -o-animation-delay: 0s;
       animation-delay: 0s;
-      -webkit-transition: all 0.12s ease-out;
-      -moz-transition: all 0.12s ease-out;
-      -o-transition: all 0.12s ease-out;
-      transition: all 0.12s ease-out; }
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
       body .container #home .heading p:nth-child(3) span:nth-child(4):hover {
         cursor: pointer;
         color: #08FDD8;
@@ -870,10 +870,10 @@ body .container #home .heading {
       -moz-animation-delay: 0s;
       -o-animation-delay: 0s;
       animation-delay: 0s;
-      -webkit-transition: all 0.12s ease-out;
-      -moz-transition: all 0.12s ease-out;
-      -o-transition: all 0.12s ease-out;
-      transition: all 0.12s ease-out; }
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
       body .container #home .heading p:nth-child(3) span:nth-child(5):hover {
         cursor: pointer;
         color: #08FDD8;
@@ -895,10 +895,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(3) span:nth-child(1):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -914,10 +914,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(3) span:nth-child(2):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -933,10 +933,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(3) span:nth-child(3):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -952,10 +952,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(3) span:nth-child(4):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -971,10 +971,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(3) span:nth-child(5):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -994,10 +994,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(3) span:nth-child(1):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -1013,10 +1013,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(3) span:nth-child(2):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -1032,10 +1032,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(3) span:nth-child(3):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -1051,10 +1051,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(3) span:nth-child(4):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -1070,10 +1070,10 @@ body .container #home .heading {
           -moz-animation-delay: 0s;
           -o-animation-delay: 0s;
           animation-delay: 0s;
-          -webkit-transition: all 0.12s ease-out;
-          -moz-transition: all 0.12s ease-out;
-          -o-transition: all 0.12s ease-out;
-          transition: all 0.12s ease-out; }
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
           body .container #home .heading p:nth-child(3) span:nth-child(5):hover {
             cursor: pointer;
             color: #08FDD8;
@@ -1123,12 +1123,25 @@ body .container #home .sub-heading {
   margin-top: 0;
   margin-left: 15px;
   padding: 2px;
-  font-size: 1.5em;
-  color: #616161;
-  text-shadow: 1px 1px 4px #fff;
+  font-size: 2em;
+  color: #252627;
+  text-shadow: 1px 1px 2px #fff;
+  font-weight: bold;
+  -webkit-animation-name: showSubHeading;
+  -moz-animation-name: showSubHeading;
+  -o-animation-name: showSubHeading;
   animation-name: showSubHeading;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
   animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
   animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   opacity: 0; }
   @media only screen and (min-width: 300px) {
@@ -1172,50 +1185,81 @@ body .container #about h2, body .container #skills h2, body .container #myWork h
     body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
       font-size: 3.5em; } }
 
+@keyframes arrowMoving {
+  0% {
+    top: -40px;
+    opacity: 0; }
+  25% {
+    top: -15px;
+    opacity: 0; }
+  50% {
+    top: 0;
+    opacity: 1; }
+  75% {
+    top: 15px;
+    opacity: 0; }
+  100% {
+    top: 40px;
+    opacity: 0; } }
 body .container #home .heading-button {
   font-family: "Roboto Mono", monospace;
   font-size: 1em;
   margin-left: 15px;
   text-decoration: none;
   border: 1px solid #fff;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 10px;
   background-color: #E74C3C;
   box-shadow: 0 0 15px #252627;
   border-radius: 5px;
-  color: black;
+  color: #fff;
   font-weight: bold;
   display: flex;
+  word-spacing: -2px;
+  -webkit-align-items: center;
   align-items: center;
-  transition: color 0.5s, background-color 1.5s, text-shadow 0.5s; }
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
   @media only screen and (min-width: 300px) {
     body .container #home .heading-button {
       margin-left: 20px; } }
   @media only screen and (min-width: 400px) {
     body .container #home .heading-button {
-      padding: 10px 15px;
+      padding: 10px 15px 10px 15px;
       font-size: 1.2em; } }
   body .container #home .heading-button i {
-    padding-left: 5px;
-    transition: all 0.5s; }
+    position: relative;
+    color: black;
+    padding-left: 10px;
+    font-size: 24px;
+    -webkit-animation-name: arrowMoving;
+    -moz-animation-name: arrowMoving;
+    -o-animation-name: arrowMoving;
+    animation-name: arrowMoving;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear; }
   body .container #home .heading-button:hover {
     color: black;
     background-color: #fff;
     text-shadow: 0 0 2px red; }
-  body .container #home .heading-button:hover i {
-    transform: rotate(90deg) translate(-2px, 0);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    -webkit-transform: translate(-2px 0);
-    -moz-transform: translate(-2px 0);
-    -o-transform: translate(-2px 0);
-    -ms-transform: translate(-2px 0);
-    transform: translate(-2px 0); }
 
 body .container #home {
-  padding: 100px 0 40px 0;
+  padding: 200px 0 40px 0;
   display: flex;
   -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
@@ -1300,9 +1344,21 @@ body .container #about hr, body .container #skills hr, body .container #myWork h
   background-color: #444649;
   width: 10%;
   margin-bottom: 40px;
+  -webkit-animation-name: hrMoving, hrInfinite;
+  -moz-animation-name: hrMoving, hrInfinite;
+  -o-animation-name: hrMoving, hrInfinite;
   animation-name: hrMoving, hrInfinite;
+  -webkit-animation-duration: 1s, 8s;
+  -moz-animation-duration: 1s, 8s;
+  -o-animation-duration: 1s, 8s;
   animation-duration: 1s, 8s;
+  -webkit-animation-delay: 0s, 5s;
+  -moz-animation-delay: 0s, 5s;
+  -o-animation-delay: 0s, 5s;
   animation-delay: 0s, 5s;
+  -webkit-animation-iteration-count: 1, infinite;
+  -moz-animation-iteration-count: 1, infinite;
+  -o-animation-iteration-count: 1, infinite;
   animation-iteration-count: 1, infinite; }
 
 body .container #about {
@@ -1315,6 +1371,8 @@ body .container #about {
   font-size: 14px;
   background-color: #F5F5F5; }
   body .container #about p {
+    margin-left: 15%;
+    margin-right: 15%;
     font-size: 1.2em; }
     body .container #about p span {
       color: #E74C3C;
@@ -1377,9 +1435,21 @@ body .container #about hr, body .container #skills hr, body .container #myWork h
   background-color: #444649;
   width: 10%;
   margin-bottom: 40px;
+  -webkit-animation-name: hrMoving, hrInfinite;
+  -moz-animation-name: hrMoving, hrInfinite;
+  -o-animation-name: hrMoving, hrInfinite;
   animation-name: hrMoving, hrInfinite;
+  -webkit-animation-duration: 1s, 8s;
+  -moz-animation-duration: 1s, 8s;
+  -o-animation-duration: 1s, 8s;
   animation-duration: 1s, 8s;
+  -webkit-animation-delay: 0s, 5s;
+  -moz-animation-delay: 0s, 5s;
+  -o-animation-delay: 0s, 5s;
   animation-delay: 0s, 5s;
+  -webkit-animation-iteration-count: 1, infinite;
+  -moz-animation-iteration-count: 1, infinite;
+  -o-animation-iteration-count: 1, infinite;
   animation-iteration-count: 1, infinite; }
 
 body .container #skills {
@@ -1388,6 +1458,8 @@ body .container #skills {
   font-size: 14px; }
   body .container #skills .container {
     display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     -webkit-justify-content: space-evenly;
@@ -1451,6 +1523,16 @@ body .container #about h2, body .container #skills h2, body .container #myWork h
     body .container #about h2, body .container #skills h2, body .container #myWork h2, body .container #contact h2 {
       font-size: 3.5em; } }
 
+body .container #myWork .container .content:hover {
+  box-shadow: 1px 1px 4px #000; }
+body .container #myWork .container .content:hover .overlayTop {
+  opacity: 1;
+  height: 50%;
+  bottom: 50%; }
+body .container #myWork .container .content:hover .overlayBottom {
+  opacity: 1;
+  height: 50%;
+  top: 50%; }
 body .container #myWork .container .content .overlayTop {
   display: flex;
   -webkit-flex-flow: column nowrap;
@@ -1583,9 +1665,21 @@ body .container #about hr, body .container #skills hr, body .container #myWork h
   background-color: #444649;
   width: 10%;
   margin-bottom: 40px;
+  -webkit-animation-name: hrMoving, hrInfinite;
+  -moz-animation-name: hrMoving, hrInfinite;
+  -o-animation-name: hrMoving, hrInfinite;
   animation-name: hrMoving, hrInfinite;
+  -webkit-animation-duration: 1s, 8s;
+  -moz-animation-duration: 1s, 8s;
+  -o-animation-duration: 1s, 8s;
   animation-duration: 1s, 8s;
+  -webkit-animation-delay: 0s, 5s;
+  -moz-animation-delay: 0s, 5s;
+  -o-animation-delay: 0s, 5s;
   animation-delay: 0s, 5s;
+  -webkit-animation-iteration-count: 1, infinite;
+  -moz-animation-iteration-count: 1, infinite;
+  -o-animation-iteration-count: 1, infinite;
   animation-iteration-count: 1, infinite; }
 
 body .container #myWork {
@@ -1615,16 +1709,6 @@ body .container #myWork {
           max-width: none;
           height: auto;
           margin: 10px; } }
-      body .container #myWork .container .content:hover {
-        box-shadow: 1px 1px 4px #000; }
-      body .container #myWork .container .content:hover .overlayTop {
-        opacity: 1;
-        height: 50%;
-        bottom: 50%; }
-      body .container #myWork .container .content:hover .overlayBottom {
-        opacity: 1;
-        height: 50%;
-        top: 50%; }
       body .container #myWork .container .content img {
         display: block;
         max-width: 100%;
@@ -1772,9 +1856,21 @@ body .container #about hr, body .container #skills hr, body .container #myWork h
   background-color: #444649;
   width: 10%;
   margin-bottom: 40px;
+  -webkit-animation-name: hrMoving, hrInfinite;
+  -moz-animation-name: hrMoving, hrInfinite;
+  -o-animation-name: hrMoving, hrInfinite;
   animation-name: hrMoving, hrInfinite;
+  -webkit-animation-duration: 1s, 8s;
+  -moz-animation-duration: 1s, 8s;
+  -o-animation-duration: 1s, 8s;
   animation-duration: 1s, 8s;
+  -webkit-animation-delay: 0s, 5s;
+  -moz-animation-delay: 0s, 5s;
+  -o-animation-delay: 0s, 5s;
   animation-delay: 0s, 5s;
+  -webkit-animation-iteration-count: 1, infinite;
+  -moz-animation-iteration-count: 1, infinite;
+  -o-animation-iteration-count: 1, infinite;
   animation-iteration-count: 1, infinite; }
 
 body .container #contact {
@@ -1784,8 +1880,7 @@ body .container #contact {
   -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
   -webkit-align-items: center;
-  align-items: center;
-  min-height: 100vh; }
+  align-items: center; }
   @media only screen and (min-width: 400px) {
     body .container #contact {
       padding: 40px 20px; } }

@@ -1,9 +1,26 @@
 @import "../helpers/mixins";
 
 %image-overlay {
+
+  &:hover {
+    box-shadow: 1px 1px 4px #000;
+  }
+
+  &:hover .overlayTop {
+    opacity: 1;
+    height: 50%;
+    bottom: 50%;
+  }
+
+  &:hover .overlayBottom {
+    opacity: 1;
+    height: 50%;
+    top: 50%;
+  }
+
   .overlayTop {
     display: flex;
-    @include flex-flow(column, nowrap);
+    @include flex-flow(column nowrap);
     @include justify-content(center);
     @include align-items(center);
     position: absolute;
@@ -14,7 +31,7 @@
     height: 0;
     background-color: $background-even;
     opacity: 0;
-    @include transitionRequired(all, .5s);
+    @include transition(all .5s);
     h3 {
       margin: 10px 0;
       font-size: 1.5em;
@@ -49,7 +66,7 @@
     height: 0;
     background-color: $background-even;
     opacity: 0;
-    @include transitionRequired(all, .5s);
+    @include transition(all .5s);
     a {
       text-decoration: none;
       border: 1px solid $background-home;
@@ -58,7 +75,7 @@
       font-weight: bold;
       text-transform: uppercase;
       border-radius: 5px;
-      @include transitionRequired(all, .5s);
+      @include transition(all .5s);
       @media only screen and (min-width: 300px) {
         padding: 10px 20px;
       }

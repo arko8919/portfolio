@@ -1,37 +1,69 @@
 @import "../helpers/mixins";
 
 %heading-button {
+  @keyframes arrowMoving {
+    0% {
+      top: -40px;
+      opacity: 0;
+    }
+
+    25% {
+      top: -15px;
+      opacity: 0;
+    }
+
+    50% {
+      top: 0;
+      opacity: 1;
+    }
+
+    75% {
+      top: 15px;
+      opacity: 0;
+    }
+
+    100% {
+      top: 40px;
+      opacity: 0;
+    }
+
+  }
+
   .heading-button {
     font-family: $mono-font;
     font-size: 1em;
     margin-left: 15px;
     text-decoration: none;
     border: 1px solid $white;
-    padding: 5px 10px;
+    padding: 5px 10px 5px 10px;
     background-color: $background-home;
     box-shadow: 0 0 15px #252627;
     border-radius: 5px;
-    color: black;
+    color: $white;
     font-weight: bold;
     display: flex;
-    align-items: center;
-    transition: color 0.5s, background-color 1.5s, text-shadow 0.5s;
+    word-spacing: -2px;
+    @include align-items(center);
+    @include transition(all .3s linear);
 
     @media only screen and (min-width: 300px) {
       margin-left: 20px;
     }
     @media only screen and (min-width: 400px) {
-      padding: 10px 15px;
+      padding: 10px 15px 10px 15px;
       font-size: 1.2em;
-    }
-    @media only screen and (min-width: 800px) {
-
     }
 
     i {
-      padding-left: 5px;
-      transition: all 0.5s;
-
+      position: relative;
+      color: $black;
+      padding-left: 10px;
+      font-size: 24px;
+      @include animation-name(arrowMoving);
+      @include animation-duration(2s);
+      @include animation-iteration-count(infinite);
+      @include animation-timing-function(linear);
+      @include transition(all .5s linear);
     }
 
     &:hover {
@@ -40,10 +72,5 @@
       text-shadow: 0 0 2px $red;
     }
 
-    &:hover i {
-      transform: rotate(90deg) translate(-2px, 0);
-      @include transform(rotate(90deg));
-      @include transform(translate(-2px 0 ));
-    }
   }
 }

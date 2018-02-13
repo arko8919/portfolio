@@ -12,12 +12,12 @@
 
     .container {
       display: flex;
-      @include flex-flow(column, nowrap);
+      @include flex-flow(column nowrap);
       @include justify-content(center);
       @include align-items(center);
       cursor: pointer;
       @media only screen and (min-width: 700px) {
-        @include flex-flow(row, wrap);
+        @include flex-flow(row wrap);
       }
       .content {
         position: relative;
@@ -29,22 +29,6 @@
           max-width: none;
           height: auto;
           margin: 10px;
-        }
-
-        &:hover {
-          box-shadow: 1px 1px 4px #000;
-        }
-
-        &:hover .overlayTop {
-          opacity: 1;
-          height: 50%;
-          bottom: 50%;
-        }
-
-        &:hover .overlayBottom {
-          opacity: 1;
-          height: 50%;
-          top: 50%;
         }
 
         img {

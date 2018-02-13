@@ -1,5 +1,6 @@
 import React from "react";
 import {ContactButton} from "./contactButton";
+import {Element} from 'react-scroll';
 
 const headingLetters = [
     <span>H</span>,
@@ -30,32 +31,31 @@ export class Home extends React.Component {
             paragraphThree: []
 
         };
-
     }
 
     componentDidMount() {
         const intervalOne = setInterval(function () {
-            if ( i < 3) {
+            if (i < 3) {
                 firstParagraph.push(headingLetters[i]);
                 this.setState({
                     paragraphOne: firstParagraph
                 });
             }
 
-            else if (  i < 6) {
+            else if (i < 6) {
                 secondParagraph.push(headingLetters[i]);
                 this.setState({
                     paragraphTwo: secondParagraph
                 });
             }
 
-            else if ( i >= 6 ) {
+            else if (i >= 6) {
                 thirdParagraph.push(headingLetters[i]);
                 this.setState({
                     paragraphThree: thirdParagraph
                 });
             }
-            if(i === headingLetters.length) {
+            if (i === headingLetters.length) {
                 clearInterval(intervalOne);
             }
             i++;
@@ -64,15 +64,17 @@ export class Home extends React.Component {
 
     render() {
         return (
-            <div id="home">
-                <h1 className="heading">
-                    <p>{this.state.paragraphOne}</p>
-                    <p>{this.state.paragraphTwo}</p>
-                    <p>{this.state.paragraphThree}</p>
-                </h1>
-                <p className="sub-heading">I am Web Developer</p>
-                <ContactButton/>
-            </div>
+            <Element name="HOME">
+                <div id="home">
+                    <h1 className="heading">
+                        <p>{this.state.paragraphOne}</p>
+                        <p>{this.state.paragraphTwo}</p>
+                        <p>{this.state.paragraphThree}</p>
+                    </h1>
+                    <p className="sub-heading">I am Web Developer</p>
+                    <ContactButton/>
+                </div>
+            </Element>
         )
     }
 }

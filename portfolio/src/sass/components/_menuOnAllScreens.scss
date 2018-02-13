@@ -5,14 +5,14 @@
   nav {
     width: 100%;
     position: fixed;
-    top: 40px;
+    top: 60px;
     left: 0;
     z-index: 1000;
     display: flex;
     background-color: $background-nav;
     @include transform(translate3d(-100%, 0, 0)); // Hide side bar when page is loaded
-    @include transition(transform, .3s, cubic-bezier(0, .52, 0, 1)); // Slide effect
-    @include flex-flow(row, nowrap);
+    @include transition(transform .3s cubic-bezier(0, .52, 0, 1)); // Slide effect
+    @include flex-flow(row nowrap);
     @include justify-content(space-evenly);
     @include align-items(center);
 
@@ -27,7 +27,7 @@
     @media only screen and (min-width: 800px) {
       width: 80px;
       height: 100%;
-      @include flex-flow(column, wrap);
+      @include flex-flow(column wrap);
     }
 
     // Links

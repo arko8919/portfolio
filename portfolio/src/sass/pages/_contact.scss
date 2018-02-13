@@ -6,9 +6,8 @@
     padding: 40px 10px;
     font-size: $standard-size;
     display: flex;
-    @include flex-flow(column, nowrap);
+    @include flex-flow(column nowrap);
     @include align-items(center);
-    min-height: 100vh;
     @media only screen and (min-width: 400px) {
       padding: 40px 20px;
     }
