@@ -1,12 +1,11 @@
 import React from "react";
 import $ from "jquery";
 
-/* Not Working */
 export class PostForm extends React.Component {
     constructor(props) {
         super(props);
-        this.handleSubmit = this.handleSubmit.bind(this);
 
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleSubmit(e) {
@@ -18,9 +17,9 @@ export class PostForm extends React.Component {
             e.preventDefault();
         } else {
             $.ajax({
-                url: "https://formspree.io/artur8919@gmail.com",
+                url: "https://formspree.io/arko8919@gmail.com",
                 method: "POST",
-                data: {nameT: name, emailT: email, messageT: msg},
+                data: {name: name, email: email, message: msg},
                 dataType: "json"
             });
             e.preventDefault();
@@ -35,10 +34,10 @@ export class PostForm extends React.Component {
     render() {
         return (
             <form id="ajax-contact" onSubmit={this.handleSubmit}>
-                <input type="text" id="name" name="name" placeholder="Name" />
-                <input type="email" id="email" name="_replyto" placeholder="Enter email" />
-                <textarea id="message" name="message" placeholder="Your Message" >
-                        </textarea>
+                <input type="text" id="name" name="name" placeholder="Name"/>
+                <input type="email" id="email" name="_replyto" placeholder="Enter email"/>
+                <textarea id="message" name="message" placeholder="Your Message">
+                </textarea>
                 <input type="submit" value="SEND"/>
             </form>
         )

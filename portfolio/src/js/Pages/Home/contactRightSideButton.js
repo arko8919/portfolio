@@ -1,13 +1,13 @@
 import React from "react";
 import {Link} from 'react-scroll';
 
-export const ContactButton = () => {
+export const ContactRightSideButton = () => {
     return (
         <Link to="CONTACT" smooth={true} duration={500}>
-            <a href="#contact" className="heading-button">
-                CONTACT ME
+            <span className="right-side">
+                ME
                 <i className="mdi mdi-arrow-down-bold"> </i>
-            </a>
+            </span>
         </Link>
     )
 };

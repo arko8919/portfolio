@@ -1,100 +1,33 @@
-@import "../components/headingLetters";
+/* Header Animation */
+@import "../animations/headerScaling";
 
 %heading {
-  /* Header Animation */
-  @keyframes move {
-    from {
-      @include transform(rotate3d(1, 1, 1, 360deg));
-      top: -300%;
-      opacity: 0;
-    }
-    to {
-      @include transform(rotate3d(0, 0, 0, 0deg));
-      top: 0;
-      opacity: 1;
-    }
-  }
-  /* Header Animation End here */
+  .heading {
+    @extend %display-flex;
+    @include flex-flow(column nowrap);
+    @include align-items(center);
+    width: 100%;
+    height: 2.3em;
+    margin-bottom: 0;
+    font-size: 3em;
+    font-family: $mono-font;
 
-  p {
-    position: relative;
-    display: inline-block;
-    min-height: 60px;
-    @media only screen and (min-width: 400px) {
-      min-height: 100px;
-    }
-    @media only screen and (min-width: 800px) {
-      min-height: 140px;
-    }
-    span {
-      position: absolute;
-      opacity: 1;
-      top: 0;
-      @include animation-name(move);
-      @include animation-duration(2s);
-      @include animation-timing-function(cubic-bezier(.91, .8, .54, 1.39));
-      @include animation-delay(0s);
-      @extend %text-3d-thin; // Add 3d effect on heading letters
-    }
-  }
-  // Positioning of all header letters and paragraphs
-  p:nth-child(1) {
-    min-width: 80px;
-    margin: 0 0 0 15px;
-    @include headingLetters(3, 27); // $items --> styling header letters, $inc --> inc. distance between letters
+    //  ELEMENTS ADDED AFTER RENDER METHOD
+    div {
+      span {
+        color: $heading;
+        @include transition(all .3s ease-out);
 
-    @media only screen and (min-width: 300px) {
-      display: block;
-      max-width: 80px;
-      margin: 0 0 0 20px;
-    }
-    @media only screen and (min-width: 400px) {
-      min-width: 135px;
-      @include headingLetters(3, 42); // $items --> styling header letters, $inc --> inc. distance between letters
-    }
-    @media only screen and (min-width: 800px) {
-      display: inline-block;
-      min-width: 200px;
-      @include headingLetters(3, 62); // $items --> styling header letters, $inc --> inc. distance between letters
-    }
-  }
+        &:hover {
+          cursor: pointer;
+          color: $hover-nav;
+          @include transform(scale(1.2));
+        }
 
-  p:nth-child(2) {
-    min-width: 80px;
-    margin: 0;
-    @include headingLetters(3, 20); // $items --> styling header letters, $inc --> inc. distance between letters
-
-    @media only screen and (min-width: 300px) {
-      min-width: 90px;
-      margin: 0 0 0 20px;
-    }
-    @media only screen and (min-width: 400px) {
-      min-width: 135px;
-      @include headingLetters(3, 32); // $items --> styling header letters, $inc --> inc. distance between letters
-    }
-    @media only screen and (min-width: 800px) {
-      min-width: 200px;
-      margin: 0;
-      @include headingLetters(3, 47); // $items --> styling header letters, $inc --> inc. distance between letters
-    }
-  }
-
-  p:nth-child(3) {
-    min-width: 150px;
-    margin: 0 0 0 15px;
-    @include headingLetters(5, 27); // $items --> styling header letters, $inc --> inc. distance between letters
-
-    @media only screen and (min-width: 300px) {
-      margin: 0;
-    }
-    @media only screen and (min-width: 400px) {
-      min-width: 220px;
-      @include headingLetters(5, 40); // $items --> styling header letters, $inc --> inc. distance between letters
-    }
-    @media only screen and (min-width: 800px) {
-      min-width: 340px;
-      margin: 0 0 0 20px;
-      @include headingLetters(5, 65); // $items --> styling header letters, $inc --> inc. distance between letters
+        @include animation(headerScaling .1s 1);
+        @include animation-timing-function(linear);
+        @extend %text-3d-thin; // Add 3d effect on heading letters
+      }
     }
   }
 }

@@ -8,8 +8,8 @@
 
 body {
   font-family: $standard-font; /* Imported Google Font */
-  @media only screen and (min-width: 800px) {
-    margin-left: 80px;
+  @media only screen and (min-width: 1224px) {
+    margin-left: 100px;
   }
 
   .container {

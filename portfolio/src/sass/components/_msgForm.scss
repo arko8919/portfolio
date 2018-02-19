@@ -4,16 +4,15 @@
   .msgForm {
     position: relative;
     width: 100%;
-    @media only screen and (min-width: 500px) {
+    @media only screen and (min-width: 468px) {
       width: 80%
     }
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: 768px) {
       width: 60%;
-
     }
 
     form {
-      display: flex;
+      @extend %display-flex;
       @include flex-flow(column nowrap);
 
       input, textarea {
@@ -26,10 +25,9 @@
 
       textarea {
         height: 80px;
-        @media only screen and (min-width: 400px) {
+        @media only screen and (min-width: 468px) {
           height: 100px;
         }
-
       }
 
       input[type="submit"] {
@@ -41,7 +39,7 @@
         background-color: $background-home;
         color: $white;
         @include transition(all .5s);
-        @media only screen and (min-width: 800px) {
+        @media only screen and (min-width: 768px) {
           width: 120px;
         }
 
@@ -59,10 +57,11 @@
       left: 0;
       width: 105%;
       height: 105%;
-      margin: -10px 0 0 -15px;
-      border-radius: 10px;
+      margin: 0;
       padding: 0;
       background-color: $backgroundNav-rgb;
+      border-radius: 5px;
+      @extend %centering;
 
       span {
         position: absolute;

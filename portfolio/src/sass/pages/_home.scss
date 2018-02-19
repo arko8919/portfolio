@@ -1,44 +1,37 @@
-@import "../helpers/placeholders";
 @import "../layout/heading";
 @import "../layout/subHeading";
-@import "../components/headingButton";
+@import "../layout/headingButton";
 
 %home {
-
   #home {
-    padding: 200px 0 40px 0;
-    display: flex;
+    @extend %display-flex;
     @include flex-flow(column nowrap);
-    @include align-items(flex-start);
+    @include align-items(center);
+    @include justify-content(center);
     min-height: 100vh;
-    font-size: 14px;
+    font-size: $standard-size; // 14px
     background-color: $background-home;
-    @media only screen and (min-width: 400px) {
-      padding: 80px 0 40px 0;
-    }
-    @media only screen and (min-width: 800px) {
-      padding: 80px 0 40px 0;
-      @include flex-flow(column wrap);
-      @include align-items(center);
-      @include justify-content(center);
+    padding: 40px 0;
+    @media only screen and (min-width: 321px) and (min-height: 321px) {
+      font-size: 18px;
     }
 
-    .heading {
-      font-size: 3em;
-      width: 100%;
-      margin: 0;
-      font-family: $mono-font;
-      @media only screen and (min-width: 400px) {
-        font-size: 5em;
-      }
-      @media only screen and (min-width: 800px) {
-        text-align: center;
-        font-size: 8em;
-      }
-      @extend %heading; // Add Main Heading
+    @media only screen and (min-width: 468px) and (min-height: 468px) {
+      font-size: 26px;
+      padding: 20px 0;
     }
 
-    @extend %subHeading; // Add SubHeading
-    @extend %heading-button; // Add Heading Button
+    @media only screen and (min-width: 768px) and (min-height: 768px) {
+      font-size: 32px;
+    }
+
+    @media only screen and (min-width: 1224px) {
+      font-size: 36px;
+      padding: 0;
+    }
+
+    @extend %heading;
+    @extend %subHeading;
+    @extend %heading-button;
   }
 }

@@ -1,39 +1,19 @@
 @import "../helpers/mixins";
+@import "../animations/subHeadingFadeIn";
 
 %subHeading {
-  @keyframes showSubHeading {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
   .sub-heading {
-    margin-top: 0;
-    margin-left: 15px;
-    padding: 2px;
-    font-size: 2em;
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+    padding: 0 10px;
+    font-size: 1.5em;
     color: $heading;
     text-shadow: 1px 1px 2px $white;
     font-weight: bold;
-    @include animation-name(showSubHeading);
-    @include animation-duration(3s);
+    @include animation(subHeadingFadeIn 3s 1);
     @include animation-delay(1s);
     @include animation-fill-mode(forwards);
     opacity: 0;
-
-    @media only screen and (min-width: 300px) {
-      margin-left: 20px;
-    }
-
-    @media only screen and (min-width: 400px) {
-      font-size: 2em;
-    }
-
-    @media only screen and (min-width: 800px) {
-      font-size: 4em;
-    }
   }
 }

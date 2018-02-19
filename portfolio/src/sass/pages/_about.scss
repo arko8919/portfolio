@@ -1,30 +1,33 @@
 @import "../components/underLine";
+
 %about {
   #about {
-    display: flex;
-    @include flex-flow(column nowrap);
-    @include align-items(center);
     padding: 40px 20px;
     font-size: $standard-size;
     background-color: $background-even;
-
+    @extend %display-flex;
+    @include flex-flow(column nowrap);
+    @include align-items(center);
     @extend %h2;
     @extend %under-line; // underline under heading level 2
 
     p {
-      margin-left: 15%;
-      margin-right: 15%;
       font-size: 1.2em;
+      text-align: center;
 
       span {
         color: $background-home;
         font-weight: bold;
       }
-      @media only screen and (min-width: 400px) {
+      @media only screen and (min-width: 468px) {
         font-size: 1.5em;
+        margin-left: 10%;
+        margin-right: 10%;
       }
-      @media only screen and (min-width: 800px) {
+      @media only screen and (min-width: 768px) {
         font-size: 2em;
+        margin-left: 15%;
+        margin-right: 15%;
       }
     }
   }

@@ -8,7 +8,6 @@ import {MyWork} from "./Pages/myWork/myWork";
 import {Contact} from "./Pages/Contact/contact";
 import {Footer} from "./Footer/footer";
 
-
 class App extends Component {
 
     render() {
@@ -27,3 +26,4 @@ class App extends Component {
 }
 
 export default App;
+

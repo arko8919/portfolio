@@ -15,7 +15,6 @@
         background-color: $background-nav;
         opacity: 0;
         @include transition(opacity .5s);
-
       }
 
       i:hover:before {
@@ -25,9 +24,9 @@
       i:after {
         position: absolute;
         content: $item;
-        font-size: 8px;
+        font-size: .5em;
         opacity: 0;
-        @include transition(opacity .5s);
+        @include transition(all .5s);
         @extend %centering; // Centering
       }
 

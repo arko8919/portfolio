@@ -2,39 +2,59 @@
 
 %skills {
   #skills {
-    padding: 40px 0 60px 0;
+    padding: 40px 0;
     background: $background;
     font-size: $standard-size;
-
     @extend %h2;
     @extend %under-line; // underline under heading level 2
 
     .container {
-      display: flex;
-      margin-left: 15%;
-      margin-right: 15%;
+      @extend %display-flex;
       @include flex-flow(row wrap);
-      @include justify-content(space-evenly);
+      @include justify-content(center);
       @include align-items(center);
-
+      @media only screen and (min-width: 768px) {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
 
       .content {
-        display: flex;
+        width: 80px;
+        margin: 10px;
+        cursor: pointer;
+        @extend %display-flex;
         @include flex-flow(column nowrap);
         @include justify-content(center);
         @include align-items(center);
-        margin: 15px;
+        @include transition(all .5s);
+        @media only screen and (min-width: 321px) {
+          width: 100px;
+          margin: 25px;
+        }
+        @media only screen and (min-width: 768px) {
+          width: 120px;
+          margin: 40px;
+        }
+
+        &:hover {
+          @include transform(scale(1.5));
+        }
+
+        &:hover span {
+          color: $background-home;
+          box-shadow: 1px 1px 5px $black;
+        }
 
         i {
-          font-size: 36px;
+          font-size: 48px;
           margin-bottom: 10px;
-          @media only screen and (min-width: 400px) {
-            font-size: 64px;
+          @media only screen and (min-width: 321px) {
+            font-size: 72px;
             margin-left: 10px;
             margin-right: 10px;
           }
-          @media only screen and (min-width: 800px) {
-            font-size: 96px;
+          @media only screen and (min-width: 768px) {
+            font-size: 112px;
             margin-left: 20px;
             margin-right: 20px;
           }
@@ -43,6 +63,9 @@
         span {
           color: $text-grey;
           font-weight: bold;
+          padding: 5px;
+          border: 1px solid $white;
+          border-radius: 5px;
         }
       }
     }

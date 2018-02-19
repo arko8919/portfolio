@@ -1,58 +1,51 @@
 import React from "react";
-import {ContactButton} from "./contactButton";
 import {Element} from 'react-scroll';
+import {ContactRightSideButton} from "./contactRightSideButton";
+import {ContactLeftSideButton} from "./contactLeftSideButton";
 
 const headingLetters = [
-    <span>H</span>,
-    <span>i</span>,
-    <span>,</span>,
-    <span>I</span>,
-    <span>'</span>,
-    <span>m</span>,
-    <span>A</span>,
-    <span>r</span>,
-    <span>t</span>,
-    <span>u</span>,
-    <span>r</span>
+    <span key="letter1">H</span>,
+    <span key="letter2">i</span>,
+    <span key="letter3">,</span>,
+    <span key="letter4">I</span>,
+    <span key="letter5">'</span>,
+    <span key="letter6">m</span>,
+    <span key="letter7">A</span>,
+    <span key="letter8">r</span>,
+    <span key="letter9">t</span>,
+    <span key="letter10">u</span>,
+    <span key="letter11">r</span>
 ];
 
 let i = 0;
-let firstParagraph = [];
-let secondParagraph = [];
-let thirdParagraph = [];
+let container = [];
 
 export class Home extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            paragraphOne: [],
-            paragraphTwo: [],
-            paragraphThree: []
-
+            divOne: [],
+            divTwo: [],
         };
     }
 
     componentDidMount() {
         const intervalOne = setInterval(function () {
-            if (i < 3) {
-                firstParagraph.push(headingLetters[i]);
+            if (i < 6) {
+                container.push(headingLetters[i]);
                 this.setState({
-                    paragraphOne: firstParagraph
+                    divOne: container
                 });
-            }
-
-            else if (i < 6) {
-                secondParagraph.push(headingLetters[i]);
-                this.setState({
-                    paragraphTwo: secondParagraph
-                });
+                if (i === 5) {
+                    container = [];
+                }
             }
 
             else if (i >= 6) {
-                thirdParagraph.push(headingLetters[i]);
+                container.push(headingLetters[i]);
                 this.setState({
-                    paragraphThree: thirdParagraph
+                    divTwo: container
                 });
             }
             if (i === headingLetters.length) {
@@ -67,12 +60,14 @@ export class Home extends React.Component {
             <Element name="HOME">
                 <div id="home">
                     <h1 className="heading">
-                        <p>{this.state.paragraphOne}</p>
-                        <p>{this.state.paragraphTwo}</p>
-                        <p>{this.state.paragraphThree}</p>
+                        <div>{this.state.divOne}</div>
+                        <div>{this.state.divTwo}</div>
                     </h1>
-                    <p className="sub-heading">I am Web Developer</p>
-                    <ContactButton/>
+                    <p className="sub-heading">Front End Web Developer</p>
+                    <div className="heading-button">
+                        <ContactLeftSideButton/>
+                        <ContactRightSideButton/>
+                    </div>
                 </div>
             </Element>
         )

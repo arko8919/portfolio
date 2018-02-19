@@ -1,0 +1,59 @@
+@-webkit-keyframes headingButtonRightSideMove {
+  0% {
+    opacity: 0;
+    right: -200%;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@-moz-keyframes headingButtonRightSideMove {
+  0% {
+    opacity: 0;
+    right: -200%;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@-o-keyframes headingButtonRightSideMove {
+  0% {
+    opacity: 0;
+    right: -200%;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@-ms-keyframes headingButtonRightSideMove {
+  0% {
+    opacity: 0;
+    right: -200%;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@keyframes headingButtonRightSideMove {
+  0% {
+    opacity: 0;
+    right: -200%;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}

@@ -1,6 +1,13 @@
 @import "placeholders";
 
 // Animations
+@mixin animation($value) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  -o-animation: $value;
+  animation: $value;
+}
+
 @mixin animation-name($name) {
   -webkit-animation-name: $name;
   -moz-animation-name: $name;
@@ -42,6 +49,7 @@
   -o-animation-fill-mode: $value;
   animation-fill-mode: $value;
 }
+
 // Transition / Transform
 
 @mixin transition($value) {
@@ -60,7 +68,6 @@
 }
 
 // Flex
-
 @mixin flex-flow($value) {
   -webkit-flex-flow: $value;
   flex-flow: $value;

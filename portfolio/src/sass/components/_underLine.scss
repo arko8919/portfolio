@@ -1,41 +1,17 @@
 @import "../helpers/mixins";
+@import "../animations/underLineMoving";
 
 %under-line {
-
-  // Starting animation
-  @keyframes hrMoving {
-    from {
-      left: -300%;
-    }
-    to {
-      left: 0;
-    }
-  }
-
-  // Animation in runtime
-  @keyframes hrInfinite {
-    0% {
-      left: -300%;
-    }
-    5% {
-      left: 0;
-    }
-    100% {
-      left: 0;
-    }
-  }
-
   hr {
     position: relative;
     border: none;
     outline: none;
     height: 5px;
-    background-color:  $text;
+    background-color: $text;
     width: 10%;
     margin-bottom: 40px;
-    @include animation-name((hrMoving, hrInfinite));
-    @include animation-duration((1s, 8s));
-    @include animation-delay((0s, 5s));
-    @include animation-iteration-count((1, infinite));
+    @include animation-name(underLineMoving);
+    @include animation-duration(8s);
+    @include animation-iteration-count(infinite);
   }
 }
