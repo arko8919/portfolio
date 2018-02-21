@@ -9,15 +9,8 @@ export const Footer = () => {
                    target="_blank"
                    rel="noopener noreferrer"
                 > </a>
-                <a className="mdi mdi-instagram"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                > </a>
-                <a className="mdi mdi-twitter-box"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                > </a>
-                <a className="mdi mdi-linkedin-box"
+                <a href="https://www.linkedin.com/in/artur-sas-dunajewski/"
+                   className="mdi mdi-linkedin-box"
                    target="_blank"
                    rel="noopener noreferrer"
                 > </a>

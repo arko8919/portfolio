@@ -55,6 +55,7 @@ export class Menu extends React.Component {
                           duration={500}
                           spy={true}
                           onSetActive={this.handleSetActive.bind(this)}
+                          offset={-40}
                           key={menuItem.key}
                     >
                         <Anchor
