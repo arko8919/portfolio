@@ -5,66 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="041c67e3-d468-442b-89e8-18ef543bba2f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/page.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Pages/myWork/homers-on-the-job.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/App.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Footer/footer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Navigation/anchor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Navigation/menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Navigation/menuButton.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Navigation/menuContainer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Navigation/menuIconBar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Pages/About/about.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Pages/Contact/contact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Pages/Contact/popupWindow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Pages/Contact/postForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Pages/Home/contactLeftSideButton.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Pages/Home/contactRightSideButton.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Pages/Home/home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Pages/Skills/skills.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/Pages/myWork/myWork.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/App.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/App.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/App.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/animations/_headerScaling.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/animations/_headingButtonArrow.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/animations/_headingButtonLeftSideMove.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/animations/_headingButtonRightSideMove.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/animations/_subHeadingFadeIn.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/animations/_underLineMoving.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/components/_iconOverlay.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/components/_imageOverlay.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/components/_msgForm.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/components/_underLine.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/helpers/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/helpers/_placeholders.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/helpers/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/layout/_footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/layout/_heading.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/layout/_headingButton.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/layout/_menuOnAllScreens.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/layout/_menuOnSmallScreens.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/layout/_nav.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/layout/_subHeading.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/pages/_about.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/pages/_contact.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/pages/_home.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/pages/_myWork.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/pages/_skills.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,8 +20,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="90" column="23" lean-forward="true" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
+            <state relative-caret-position="504">
+              <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -333,12 +275,12 @@
       <workItem from="1519253736678" duration="1098000" />
       <workItem from="1519501428663" duration="160000" />
       <workItem from="1519504810746" duration="142000" />
-      <workItem from="1519505040221" duration="903000" />
+      <workItem from="1519505040221" duration="1801000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="405082000" />
+    <option name="totallyTimeSpent" value="405980000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -764,8 +706,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="90" column="23" lean-forward="true" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
+        <state relative-caret-position="504">
+          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
           <folding />
         </state>
       </provider>
