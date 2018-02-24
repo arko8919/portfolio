@@ -1,0 +1,41 @@
+@import "../helpers/mixins";
+
+/* Menu Links */
+@mixin iconOverlay($counter, $menuItems) {
+  @each $item in $menuItems {
+    a:nth-child(#{$counter}) {
+
+      i:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $background-nav;
+        opacity: 0;
+        @include transition(opacity .5s);
+      }
+
+      i:hover:before {
+        opacity: 1;
+      }
+
+      i:after {
+        position: absolute;
+        content: $item;
+        font-size: .5em;
+        opacity: 0;
+        @include transition(all .5s);
+        @extend %centering; // Centering
+      }
+
+      i:hover:after {
+        opacity: 1;
+        color: $hover-nav;
+      }
+    }
+    $counter: $counter + 1;
+  }
+}
+

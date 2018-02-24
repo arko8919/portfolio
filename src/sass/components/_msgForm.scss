@@ -1,0 +1,77 @@
+@import "../helpers/mixins";
+
+%msg-form {
+  .msgForm {
+    position: relative;
+    width: 100%;
+    @media only screen and (min-width: 468px) {
+      width: 80%
+    }
+    @media only screen and (min-width: 768px) {
+      width: 60%;
+    }
+
+    form {
+      @extend %display-flex;
+      @include flex-flow(column nowrap);
+
+      input, textarea {
+        margin-bottom: 5px;
+        resize: vertical;
+        padding: 5px 5px;
+        background-color: $background-even;
+        box-shadow: 1px 1px 2px $black;
+      }
+
+      textarea {
+        height: 80px;
+        @media only screen and (min-width: 468px) {
+          height: 100px;
+        }
+      }
+
+      input[type="submit"] {
+        cursor: pointer;
+        border: 1px solid $text;
+        font-weight: bold;
+        outline: none;
+        width: 100%;
+        background-color: $background-home;
+        color: $white;
+        @include transition(all .5s);
+        @media only screen and (min-width: 768px) {
+          width: 120px;
+        }
+
+        &:hover {
+          background-color: $background-even;
+          color: $background-home;
+        }
+      }
+    }
+
+    .popupWindow {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 105%;
+      height: 105%;
+      margin: 0;
+      padding: 0;
+      background-color: $backgroundNav-rgb;
+      border-radius: 5px;
+      @extend %centering;
+
+      span {
+        position: absolute;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px $red;
+        @extend %centering;
+      }
+    }
+  }
+
+}

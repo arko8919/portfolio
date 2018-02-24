@@ -1,0 +1,54 @@
+@import "../helpers/mixins";
+
+%footer {
+  footer {
+    padding: 40px 20px;
+    background-color: $background-home;
+    font-size: $standard-size;
+    @extend %display-flex;
+    @include flex-flow(column nowrap);
+    @include align-items(center);
+    .icons {
+      color: $white;
+      @extend %display-flex;
+      @include flex-flow(row wrap);
+      @include align-items(center);
+      @include justify-content(center);
+      a {
+        color: $background-nav;
+        cursor: pointer;
+        font-size: 48px;
+        margin: 0 5px;
+        @include transition(all .5s);
+        @media only screen and (min-width: 468px) {
+          font-size: 64px;
+        }
+        @media only screen and (min-width: 768px) {
+          font-size: 86px;
+          margin-left: 20px;
+        }
+        &:hover {
+          color: $hover-nav;
+        }
+      }
+    }
+
+    p {
+      margin-top: 40px;
+      font-size: 1.3em;
+      color: $white;
+      text-transform: uppercase;
+      font-family: $mono-font;
+      @media only screen and (min-width: 468px) {
+        font-size: 1.5em;
+      }
+      @media only screen and (min-width: 768px) {
+        font-size: 1.7em;
+      }
+
+      span {
+        color: $black;
+      }
+    }
+  }
+}

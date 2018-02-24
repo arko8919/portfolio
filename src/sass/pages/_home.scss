@@ -1,0 +1,37 @@
+@import "../layout/heading";
+@import "../layout/subHeading";
+@import "../layout/headingButton";
+
+%home {
+  #home {
+    @extend %display-flex;
+    @include flex-flow(column nowrap);
+    @include align-items(center);
+    @include justify-content(center);
+    min-height: 100vh;
+    font-size: $standard-size; // 14px
+    background-color: $background-home;
+    padding: 40px 0;
+    @media only screen and (min-width: 321px) and (min-height: 321px) {
+      font-size: 18px;
+    }
+
+    @media only screen and (min-width: 468px) and (min-height: 468px) {
+      font-size: 26px;
+      padding: 20px 0;
+    }
+
+    @media only screen and (min-width: 768px) and (min-height: 768px) {
+      font-size: 32px;
+    }
+
+    @media only screen and (min-width: 1224px) {
+      font-size: 36px;
+      padding: 0;
+    }
+
+    @extend %heading;
+    @extend %subHeading;
+    @extend %heading-button;
+  }
+}

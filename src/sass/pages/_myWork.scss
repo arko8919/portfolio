@@ -1,0 +1,46 @@
+@import "../components/imageOverlay";
+@import "../components/underLine";
+
+%myWork {
+  #myWork {
+    padding: 40px 0;
+    background-color: $background-even;
+    font-size: $standard-size;
+    @extend %h2;
+    @extend %under-line; // underline under heading level 2
+
+    .container {
+      @extend %display-flex;
+      @include flex-flow(column nowrap);
+      @include justify-content(center);
+      @include align-items(center);
+      @media only screen and (min-width: 768px) {
+        @include flex-flow(row wrap);
+      }
+      .content {
+        cursor: pointer;
+        position: relative;
+        margin: 5px;
+        box-shadow: 0 0 2px $text-grey;
+        @media only screen and (min-width: 768px) {
+          max-width: none;
+          height: auto;
+          margin: 10px;
+        }
+
+        &:hover {
+          box-shadow: 1px 1px 4px #000;
+        }
+
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+
+        /* Overlay on image */
+        @extend %image-overlay;
+      }
+    }
+  }
+}
