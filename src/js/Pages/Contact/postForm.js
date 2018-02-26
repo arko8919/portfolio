@@ -1,5 +1,4 @@
 import React from "react";
-import $ from "jquery";
 
 export class PostForm extends React.Component {
     constructor(props) {
@@ -10,25 +9,30 @@ export class PostForm extends React.Component {
 
     handleSubmit(e) {
         const name = e.target.name.value,
-            email = e.target.email.value,
-            msg = e.target.message.value;
+              email = e.target.email.value,
+              msg = e.target.message.value;
         if (!name || !email || !msg) {
             this.props.alertMsg("Please check your entries");
-            e.preventDefault();
         } else {
-            $.ajax({
-                url: "https://formspree.io/arko8919@gmail.com",
-                method: "POST",
-                data: {name: name, email: email, message: msg},
-                dataType: "json"
-            });
-            e.preventDefault();
-            e.target.name.value = "";
-            e.target.email.value = "";
-            e.target.message.value = "";
-
-            this.props.alertMsg("SUCCESS");
+            const xhr = new XMLHttpRequest();
+            const url = "//formspree.io/arko8919@gmail.com";
+            const data = JSON.stringify({name: name, email: email, message: msg});
+            xhr.dataType = "json";
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    this.props.alertMsg("SUCCESS");
+                    console.log(xhr.response);
+                }
+            };
+            xhr.open("POST", url);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.send(data);
         }
+
+        e.preventDefault();
+        e.target.name.value = "";
+        e.target.email.value = "";
+        e.target.message.value = "";
     }
 
     render() {
