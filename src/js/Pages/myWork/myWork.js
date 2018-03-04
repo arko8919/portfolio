@@ -9,36 +9,17 @@ export const MyWork = () => {
                 <hr/>
                 <div className="container">
                     <div className="content">
-                        <img src={require("./homers-on-the-job.jpg")}
-                             alt="Page Not Build. Work in progress."/>
+                        <img src={require("./urlshortener.png")}
+                             alt="URL SHORTENER"/>
                         <div className="overlayTop">
                             <h3>URL shortener</h3>
-                            <span>JavaScript + jQuery</span>
+                            <span>JavaScript + jQuery + AJAX</span>
                         </div>
                         <div className="overlayBottom">
-                            <a href="#myWork">go to site</a>
-                        </div>
-                    </div>
-                    <div className="content">
-                        <img src={require("./homers-on-the-job.jpg")}
-                             alt="Page Not Build. Work in progress."/>
-                        <div className="overlayTop">
-                            <h3>Title</h3>
-                            <span>technology</span>
-                        </div>
-                        <div className="overlayBottom">
-                            <a href="#myWork">go to site</a>
-                        </div>
-                    </div>
-                    <div className="content">
-                        <img src={require("./homers-on-the-job.jpg")}
-                             alt="Page Not Build. Work in progress."/>
-                        <div className="overlayTop">
-                            <h3>Title</h3>
-                            <span>technology</span>
-                        </div>
-                        <div className="overlayBottom">
-                            <a href="#myWork">go to site</a>
+                            <a href="https://arko8919.github.io/urlshortener.github.io/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                            >go to site</a>
                         </div>
                     </div>
                 </div>

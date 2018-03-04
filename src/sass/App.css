@@ -1370,8 +1370,6 @@ body .container #myWork {
       /* Overlay on image */ }
       @media only screen and (min-width: 768px) {
         body .container #myWork .container .content {
-          max-width: none;
-          height: auto;
           margin: 10px; } }
       body .container #myWork .container .content:hover {
         box-shadow: 1px 1px 4px #000; }
