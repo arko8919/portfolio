@@ -1367,6 +1367,7 @@ body .container #myWork {
       position: relative;
       margin: 5px;
       box-shadow: 0 0 2px #616161;
+      text-align: center;
       /* Overlay on image */ }
       @media only screen and (min-width: 768px) {
         body .container #myWork .container .content {
